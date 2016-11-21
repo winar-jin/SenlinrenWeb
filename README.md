@@ -8,6 +8,6 @@ The offical website of SenlinrenTeam.
 * Javascript
 
 ## license
-* MIT
+* [MIT](https://mit-license.org/)
 
 Powered by SenlinrenTeam Bjfu @copyright 2016
