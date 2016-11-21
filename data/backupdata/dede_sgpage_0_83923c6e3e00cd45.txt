@@ -1,0 +1,1 @@
+INSERT INTO `dede_sgpage` VALUES('1','团队简介','0','a/intro_duce.html','','{style}/singlepage.htm','default','','1479692835','Hello world!');
