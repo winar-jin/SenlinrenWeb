@@ -1,0 +1,88 @@
+<script>
+    function menuFix(){
+		  	var sfEls=document.getElementById("menu").getElementsByTagName("li");
+		    for(var index=0;index<sfEls.length;index++){
+			    sfEls[index].onmouseover=function(){
+		        	this.className+=(this.className.length > 0 ? " " : "") + "sfhover";
+			    }
+			    sfEls[index].onmouseout=function(){
+					this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
+			    }
+		    }
+		}
+		window.onload = menuFix;
+
+		$(function(){
+		    $("#myCarousel").carousel({
+		        interval:4000
+		    });
+		});
+</script>
+<div class="row">
+    <div class="top-green-bar"></div>
+</div>
+<div class="top-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 top-bar-logo">
+                <a href="index.htm"><img src="{dede:global.cfg_templets_skin/}/images/logo.png"></a>
+            </div>
+            <div class="col-md-2 top-bar-title">
+                <a href="index.htm"><img class="first-img" src="{dede:global.cfg_templets_skin/}/images/name.png">
+                    <img src="{dede:global.cfg_templets_skin/}/images/subName.png"></a>
+            </div>
+            <div class="col-md-5 top-bar-word">
+                <div>森林人只培养IT领袖和行业精英</div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 top-bar-right">
+                <div>www.senlinren.org</div>
+                <span>
+                    <input type="text" placeholder="搜索">
+                    <img src="{dede:global.cfg_templets_skin/}/images/searchIcon.png">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 导航 -->
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="menu">
+                <ul>
+                    <li>
+                        <a href="{dede:global.cfg_basehost/}/index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">简介<b class="caret"></b></a>
+                        <ul>
+                                <li><a href="{dede:global.cfg_basehost/}/a/intro_duce.html">➣ 团队简介</a></li>
+                                <li><a href="intro_teacher.htm">➣ 师资力量</a></li>
+                                <li><a href="intro_culture.htm">➣ 团队文化</a></li>
+                                <li><a href="intro_team.htm">➣ 团队结构</a></li>
+                                <li><a href="intro_public.htm">➣ 公众号</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="scientific.htm">科研
+                    </li>
+                    <li>
+							<a href="collaborate.htm">合作</a>
+                    </li>
+                    <li>
+                        <a href="teamintro.htm">招新<b class="caret"></b></a>
+                        <ul>
+                            <li><a href="teamintro.htm">➣ 团队简介</a></li>
+                            <li><a href="enroll.htm">➣ 报名表</a></li>
+                            <li><a href="question.htm">➣ 常见问题</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.htm">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
