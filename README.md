@@ -1,4 +1,4 @@
-# SenlinrenWeb
+# SenlinrenWeb  :smile:
 The offical website of SenlinrenTeam.
 
 ## Tech
