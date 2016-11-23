@@ -11,5 +11,19 @@ $z[4]=Array("global","",1891,1918);
 $z[4][4]['name']="cfg_basehost";
 $z[5]=Array("global","",2140,2167);
 $z[5][4]['name']="cfg_basehost";
+$z[6]=Array("global","",2688,2715);
+$z[6][4]['name']="cfg_basehost";
+$z[7]=Array("global","",2812,2839);
+$z[7][4]['name']="cfg_basehost";
+$z[8]=Array("global","",2958,2985);
+$z[8][4]['name']="cfg_basehost";
+$z[9]=Array("global","",3108,3135);
+$z[9][4]['name']="cfg_basehost";
+$z[10]=Array("global","",3222,3249);
+$z[10][4]['name']="cfg_basehost";
+$z[11]=Array("global","",3330,3357);
+$z[11][4]['name']="cfg_basehost";
+$z[12]=Array("global","",3519,3546);
+$z[12][4]['name']="cfg_basehost";
 
 ?>
