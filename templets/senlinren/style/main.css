@@ -226,6 +226,24 @@ div#myCarousel {
 	background-size: 100% 100%;
 	height: 425px;
 }
+#myCarousel .slide4{
+	background-image: url("../images/slide-4.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 425px;
+}
+#myCarousel .slide5{
+	background-image: url("../images/slide-5.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 425px;
+}
+#myCarousel .slide6{
+	background-image: url("../images/slide-6.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 425px;
+}
 #myCarousel ol li{
 	margin-left: 10px; 
 }
@@ -344,4 +362,105 @@ div#myCarousel {
     height: 30px;
 	border-bottom: 1px solid #CDCDCD;
 	margin-top: 10px;
+}
+
+/*合作 诚邀合作、利益共享*/
+.co_title{
+	font-size:18px;
+	padding-left: 15px;
+	border-bottom: 2px solid #73B850;
+	margin-bottom: 30px;
+}
+.co_title span{
+	display:inline-block;
+	margin-left: -15px;
+    background-color: #73B850;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-right: 15px;
+    line-height: 33px;
+}
+.co_title p{
+	color:#73B850;
+	display:inline-block;
+	margin:3px auto;
+}
+.co_content{
+	margin-left:20px;
+	margin-right:20px;
+}
+.co_content span{
+	color:#73B850;
+	font-size:18px;
+}
+/*招新：团队简介*/
+.teamintro_div{
+	padding-right:100px;
+	padding-top:30px;
+}
+.teamintro_div img{
+	display:block;
+	margin:0 auto;
+	height:200px;
+}
+.teamintro_div p{
+	font-size:20px;
+	text-align:center;
+}
+#teamintro_title{
+	font-size:30px;
+	text-align:center;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+/*招新：报名表*/
+.enroll_div{
+	padding-right:100px;
+	padding-top:30px;
+}
+.enroll_div img{
+	display:block;
+	margin:0 auto;
+}
+.enroll_title{
+	display:block;
+	margin-top:50px;
+}
+.enroll_line{
+	display:block;
+	margin: 0 auto;
+	border-bottom: 2px solid #000000;
+	width:200px;height:30px;
+	margin-bottom:20px;
+}
+.enroll_tip{
+	display:block;
+	margin: 0 auto;
+	background-color:#73B850;
+	color:#ffffff;
+	width:150px;
+	text-align:center;
+	border-radius: 3px;
+	margin-top:20px;
+	margin-bottom:50px;
+}
+
+/*联系*/
+.contact_title{
+	padding-left:10px;
+	font-size:18px;
+	border-bottom: 2px solid #B1B1B1;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+.contact_content{
+	padding-bottom: 150px;
+}
+.contact_content span{
+	display: inline-block;
+	margin-bottom:5px;
+	padding-left: 10px;
+}
+.contact_content p{
+	padding-left: 10px;
 }
