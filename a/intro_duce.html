@@ -13,6 +13,8 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/main.css">
+    <link rel="shortcut icon" href="/templets/senlinren/images/favicon.ico"/>
+	<link rel="bookmark" href="/templets/senlinren/images/favicon.ico"/>
 </head>
 
 <body>
@@ -43,20 +45,22 @@
     <div class="container">
         <div class="row">
             <div class="col-md-1 top-bar-logo">
-                <a href="index.htm"><img src="/templets/senlinren/images/logo.png"></a>
+                <a href="index.html"><img src="/templets/senlinren/images/logo.png"></a>
             </div>
             <div class="col-md-2 top-bar-title">
-                <a href="index.htm"><img class="first-img" src="/templets/senlinren/images/name.png">
+                <a href="index.html"><img class="first-img" src="/templets/senlinren/images/name.png">
                     <img src="/templets/senlinren/images/subName.png"></a>
             </div>
             <div class="col-md-5 top-bar-word">
                 <div>森林人只培养IT领袖和行业精英</div>
             </div>
             <div class="col-md-3 col-md-offset-1 top-bar-right">
-                <div>www.senlinren.org</div>
+                <div style="color: #1F5900;font-weight: bold;">senlinren.bjfu.edu.cn</div>
                 <span>
-                    <input type="text" placeholder="搜索">
-                    <img src="/templets/senlinren/images/searchIcon.png">
+                    <form action="/plus/search.php" method="post" id="search" name="search">
+                        <input type="text" placeholder="搜索" id="keyword" name="keyword">
+                        <img src="/templets/senlinren/images/searchIcon.png" onclick="search.submit()">
+                    </form>
                 </span>
             </div>
         </div>
@@ -68,36 +72,36 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12" id="menu">
-                <ul>
+                <ul style="padding: 0;">
                     <li>
-                        <a href="http://localhost:8081/index.html">首页</a>
+                        <a href="http://senlinren.bjfu.edu.cn/index.html">首页</a>
                     </li>
                     <li>
                         <a href="#">简介<b class="caret"></b></a>
                         <ul>
-                                <li><a href="http://localhost:8081/a/intro_duce.html">➣ 团队简介</a></li>
-                                <li><a href="intro_teacher.htm">➣ 师资力量</a></li>
-                                <li><a href="intro_culture.htm">➣ 团队文化</a></li>
-                                <li><a href="intro_team.htm">➣ 团队结构</a></li>
-                                <li><a href="intro_public.htm">➣ 公众号</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_duce.html">➣ 团队简介</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/teacher.html">➣ 师资力量</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/culture.html">➣ 团队文化</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_team.html">➣ 团队结构</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_public.html">➣ 公众号</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="http://localhost:8081/a/scientific.html">科研
+                        <a href="http://senlinren.bjfu.edu.cn/a/scientific.html">科研
                     </li>
                     <li>
-							<a href="http://localhost:8081/a/cooperation.html">合作</a>
+							<a href="http://senlinren.bjfu.edu.cn/a/cooperation.html">合作</a>
                     </li>
                     <li>
-                        <a href="http://localhost:8081/a/teamintro.html">招新<b class="caret"></b></a>
+                        <a href="#">招新<b class="caret"></b></a>
                         <ul>
-                            <li><a href="http://localhost:8081/a/teamintro.html">➣ 团队简介</a></li>
-                            <li><a href="http://localhost:8081/a/enroll.html">➣ 报名表</a></li>
-                            <li><a href="http://localhost:8081/a/question.html">➣ 常见问题</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/teamintro.html">➣ 团队简介</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/enroll.html">➣ 报名表</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/question.html">➣ 常见问题</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="http://localhost:8081/a/contact.html">联系</a>
+                        <a href="http://senlinren.bjfu.edu.cn/a/contact.html">联系</a>
                     </li>
                 </ul>
             </div>
@@ -114,15 +118,31 @@
             <div class="col-md-3" id="singlepage1-left">
                 <p>简介|Introduction</p>
                 <ul>
-                    <li>● 团队简介</li>
-                    <li>● 师资力量</li>
-                    <li>● 团队文化</li>
-                    <li>● 团队小组结构</li>
-                    <li>● 公众号</li>
+                    <li><a href="http://senlinren.bjfu.edu.cn/a/intro_duce.html">● 团队简介</a></li>
+                    <li><a href="http://senlinren.bjfu.edu.cn/a/teacher.html">● 师资力量</a></li>
+                    <li><a href="http://senlinren.bjfu.edu.cn/a/culture.html">● 团队文化</a></li>
+                    <li><a href="http://senlinren.bjfu.edu.cn/a/intro_team.html">● 团队小组结构</a></li>
+                    <li><a href="http://senlinren.bjfu.edu.cn/a/intro_public.html">● 公众号</a></li>
                 </ul>
             </div>
             <div class="col-md-9">
-                Hello world!
+                <div class="intro-content">
+	<p class="title">
+		森林人团队简介</p>
+	<p class="content">
+		针对目前教育体制的不足,森林人团队形成了&ldquo;导师制&rdquo;、&ldquo;导生制&rdquo;、&ldquo;顾问制&rdquo;结合的指导体系。通过真实项目，提升学生的创新能力和综合素质&rdquo;。目前，团队做过的项目涵盖通讯、国土、军工、仿真、林学、娱乐等众多领域。森林人团队气氛亲和融洽，战斗力强悍，让学生在实践中迅速成长。团队经费充足，成果丰硕，申请专利12项，软件注册权45项，搭建了高等教育与社会需求间的桥梁，已服务的客户涵盖华为、西门子、支付宝、IBM等知名企业以及众多创新型中小型企业。</p>
+	<p class="content">
+		森林人团队的成员来自北京林业大学信息学院、艺术学院、北京林业大学通讯技术研究所的青年学者及北京林业大学各专业优秀本科生和研究生。团队注重各学科交叉，培养成员的动手能力与实战经验。目前我们做的项目包含：好乐通通讯系统、专业屏幕取词引擎GetWord、国土资源部地质钻孔数据采集系统、军委飞艇项目、点点成长App、阿福公益App、顺丰优选吉祥物开发、宝洁公司的宣传影片、橘中戏系列游戏、留园智慧园林展示系统等。</p>
+</div>
+<div class="intro-content" id="video">
+	<p class="title">
+		宣传视频</p>
+	<center>
+		<video controls="controls" height="420" preload="load" src="/templets/senlinren/video.mp4" width="640">
+			&nbsp;</video>
+	</center>
+</div>
+
             </div>
         </div>
     </div>
@@ -133,12 +153,12 @@
 		<!--<div class="row">
 			<div class="col-md-12"><div class="bottomeline"></div></div>
 		</div>-->
-		<div class="row">
+		<!--<div class="row">
 			<div class="col-md-12 copyRight">
 				<center><p>Copyright © 2016 <b><a href="http://senlinren.bjfu.edu.cn">senlinren.bjfu.edu.cn</a></b> All rights reserved.</p></center>
                 <center style="margin-bottom: 45px;margin-top: 30px;"><img src="/templets/senlinren/images/staticNum.png"></center>
 			</div>
-		</div>
+		</div>-->
 	</div>
     <div class="bottomeBar" style="opacity: 0.6;"> 
 		<div class="container">
@@ -185,8 +205,8 @@
 
     
 	<div class="bottomeGreen">
-		<center><p>版权所有 北京林业大学林木分子育种高精尖创新中心   COPYRIGHT  2010  KYC.BJFU.EDU.CN ALL RIGHTS RESERVED</p></center>
-		<center><p>电话（传真）：010-62330000     地址：北京市海淀区清华东路35号     邮政编码:100083     Email:aaa@bjfu.edu.cn    </p></center>
+		<center><p>版权所有 北京林业大学信息学院森林人团队   COPYRIGHT  2016  SENLINREN.BJFU.EDU.CN ALL RIGHTS RESERVED</p></center>
+		<center><p>电话（传真）：010-62336651     地址：北京市海淀区清华东路35号     邮政编码:100083     Email:senlinren@bjfu.edu.cn    </p></center>
 	</div>
 </div>
 </body>

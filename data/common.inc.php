@@ -3,7 +3,7 @@
 $cfg_dbhost = 'localhost';
 $cfg_dbname = 'senlinren';
 $cfg_dbuser = 'root';
-$cfg_dbpwd = '';
+$cfg_dbpwd = 'bjfuxufu';
 $cfg_dbprefix = 'dede_';
 $cfg_db_language = 'utf8';
 

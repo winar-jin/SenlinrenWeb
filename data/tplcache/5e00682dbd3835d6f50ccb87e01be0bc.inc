@@ -1,0 +1,2 @@
+<p class="title"><a href="[field:arcurl/]" target="_blank">➢   [field:title/]</a></p>
+                        <p class="date">分类：<a href="[field:typeurl/]" target="_blank">[field:typename/]</a>  日期：[field:stime/]</p>

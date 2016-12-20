@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{dede:global.cfg_webname/}</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/main.css">
+    <link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" />
+    <link rel="bookmark" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" />
+</head>
+
+<body>
+    {dede:include filename="head.htm"/}
+
+
+
+    <div class="container">
+        <div class="row" id="singlepage1-topimg">
+        </div>
+
+        <!--插入-->
+
+        <div class="row NeiRong" id="insert-search">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class=" Weizhi">
+                    <p>您当前所在的位置:{dede:field name='position'/}</p>
+                </div>
+                <div class="search_header">
+                    <div class="search_box">
+                        <div class="row ">
+                            <form>
+                                <input type="text" name="keyword" id="keyword" class="form-control form-control-xxx" placeholder="请您输入搜索关键词">
+                                <button type="submit" class="btn btn-success ">搜索</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="searchTopBanner" style="float:right; margin:10px"><script src='{dede:global.cfg_cmsurl/}/plus/ad_js.php?aid=18' language='javascript'></script> </div>
+                </div>
+                <!-- //top -->
+                <!-- /header -->
+                <div class="resultbar">搜索 <strong class="fc_03c">{dede:global name='keyword' function='RemoveXSS(@me)'/}</strong> 的结果 </div>
+                <div class="result_content">
+                    <div class="sidebar">
+                        <div class="sidebar_banner"><script src='{dede:global.cfg_cmsurl/}/plus/ad_js.php?aid=16' language='javascript'></script></div>
+                    </div>
+                    <div class="YJScontents">
+                        {dede:list perpage='10' titlelen='80'}
+                        <p class="title"><a href="[field:arcurl/]" target="_blank">➢   [field:title/]</a></p>
+                        <p class="date">分类：<a href="[field:typeurl/]" target="_blank">[field:typename/]</a>  日期：[field:stime/]</p>
+                        {/dede:list}
+                        <div class="fl dede_pages">
+                            <ul class="pagelist">
+                                {dede:pagelist listsize='4'/}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+    {dede:include filename="footer.htm"/}
+</body>
+
+</html>

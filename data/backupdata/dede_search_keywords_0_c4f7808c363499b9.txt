@@ -1,0 +1,9 @@
+INSERT INTO `dede_search_keywords` VALUES('1','好的','好的','5','0','1479892863','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','撒地方','撒地方 地方','2','0','1479891773','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','好呢','好呢','1','0','1479891786','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','niha','niha','3','0','1479893019','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5','信息','信息','19','4','1479957015','0','0');
+INSERT INTO `dede_search_keywords` VALUES('6','支部','支部','1','1','1479913632','0','0');
+INSERT INTO `dede_search_keywords` VALUES('7','研究生','研究生 研究生','2','0','1479953661','0','0');
+INSERT INTO `dede_search_keywords` VALUES('8','hell','hell','1','0','1479953339','0','0');
+INSERT INTO `dede_search_keywords` VALUES('9','北京','北京','1','0','1479953666','0','0');

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>{dede:global.cfg_webname/}</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/main.css">
+    <link rel="shortcut icon" href="/templets/senlinren/images/favicon.ico"/>
+	<link rel="bookmark" href="/templets/senlinren/images/favicon.ico"/>
+    <style>
+        a{color: #326331;}
+        a:hover{color: #993333; text-decoration:none;}
+    </style>
+</head>
+
+<body>
+    {dede:include filename="head.htm"/}
+
+    
+
+    <div class="container">
+        <div class="row" id="singlepage1-topimg">
+        </div>
+        <div class="row list_article_main">
+			{dede:list pagesize='10'}
+            <div class="list_article_div">
+                <p class="list_article_p1">➣&nbsp;&nbsp;<a href="[field:arcurl/]">[field:title/]</a></p>
+                <p class="list_article_p2">[field:pubdate function="MyDate('Y-m-d ',@me)" /]</p>
+            </div>
+			{/dede:list}
+        </div>
+    </div>
+
+    {dede:include filename="footer.htm"/}
+</body>
+
+</html>

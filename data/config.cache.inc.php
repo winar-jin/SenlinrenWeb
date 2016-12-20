@@ -1,7 +1,7 @@
 <?php
 $cfg_disable_funs = 'phpinfo,eval,exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source,file_put_contents';
 $cfg_disable_tags = 'php';
-$cfg_basehost = 'http://localhost:8081';
+$cfg_basehost = 'http://senlinren.bjfu.edu.cn';
 $cfg_cmspath = '';
 $cfg_cookie_encode = 'TuR8oqMYw2cqppSfg3f4kAuMnuPmBr';
 $cfg_indexurl = '/';
@@ -10,7 +10,7 @@ $cfg_indexname = '主页';
 $cfg_webname = '森林人';
 $cfg_adminemail = 'senlinren@bjfu.edu.cn';
 $cfg_html_editor = 'ckeditor';
-$cfg_arcdir = '/a';
+$cfg_arcdir = '/';
 $cfg_medias_dir = '/uploads';
 $cfg_ddimg_width = 240;
 $cfg_ddimg_height = 180;
@@ -28,7 +28,7 @@ $cfg_fck_xhtml = 'N';
 $cfg_df_style = 'senlinren';
 $cfg_multi_site = 'N';
 $cfg_dede_log = 'N';
-$cfg_powerby = 'Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有';
+$cfg_powerby = 'Copyright &copy; 2014-2016 北京林业大学森林人团队 版权所有';
 $cfg_arcsptitle = 'N';
 $cfg_arcautosp = 'N';
 $cfg_arcautosp_size = 5;

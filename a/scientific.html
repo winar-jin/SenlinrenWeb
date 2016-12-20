@@ -13,6 +13,8 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/main.css">
+    <link rel="shortcut icon" href="/templets/senlinren/images/favicon.ico"/>
+	<link rel="bookmark" href="/templets/senlinren/images/favicon.ico"/>
 </head>
 
 <body>
@@ -43,20 +45,22 @@
     <div class="container">
         <div class="row">
             <div class="col-md-1 top-bar-logo">
-                <a href="index.htm"><img src="/templets/senlinren/images/logo.png"></a>
+                <a href="index.html"><img src="/templets/senlinren/images/logo.png"></a>
             </div>
             <div class="col-md-2 top-bar-title">
-                <a href="index.htm"><img class="first-img" src="/templets/senlinren/images/name.png">
+                <a href="index.html"><img class="first-img" src="/templets/senlinren/images/name.png">
                     <img src="/templets/senlinren/images/subName.png"></a>
             </div>
             <div class="col-md-5 top-bar-word">
                 <div>森林人只培养IT领袖和行业精英</div>
             </div>
             <div class="col-md-3 col-md-offset-1 top-bar-right">
-                <div>www.senlinren.org</div>
+                <div style="color: #1F5900;font-weight: bold;">senlinren.bjfu.edu.cn</div>
                 <span>
-                    <input type="text" placeholder="搜索">
-                    <img src="/templets/senlinren/images/searchIcon.png">
+                    <form action="/plus/search.php" method="post" id="search" name="search">
+                        <input type="text" placeholder="搜索" id="keyword" name="keyword">
+                        <img src="/templets/senlinren/images/searchIcon.png" onclick="search.submit()">
+                    </form>
                 </span>
             </div>
         </div>
@@ -68,36 +72,36 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12" id="menu">
-                <ul>
+                <ul style="padding: 0;">
                     <li>
-                        <a href="http://localhost:8081/index.html">首页</a>
+                        <a href="http://senlinren.bjfu.edu.cn/index.html">首页</a>
                     </li>
                     <li>
                         <a href="#">简介<b class="caret"></b></a>
                         <ul>
-                                <li><a href="http://localhost:8081/a/intro_duce.html">➣ 团队简介</a></li>
-                                <li><a href="intro_teacher.htm">➣ 师资力量</a></li>
-                                <li><a href="intro_culture.htm">➣ 团队文化</a></li>
-                                <li><a href="intro_team.htm">➣ 团队结构</a></li>
-                                <li><a href="intro_public.htm">➣ 公众号</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_duce.html">➣ 团队简介</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/teacher.html">➣ 师资力量</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/culture.html">➣ 团队文化</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_team.html">➣ 团队结构</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_public.html">➣ 公众号</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="http://localhost:8081/a/scientific.html">科研
+                        <a href="http://senlinren.bjfu.edu.cn/a/scientific.html">科研
                     </li>
                     <li>
-							<a href="http://localhost:8081/a/cooperation.html">合作</a>
+							<a href="http://senlinren.bjfu.edu.cn/a/cooperation.html">合作</a>
                     </li>
                     <li>
-                        <a href="http://localhost:8081/a/teamintro.html">招新<b class="caret"></b></a>
+                        <a href="#">招新<b class="caret"></b></a>
                         <ul>
-                            <li><a href="http://localhost:8081/a/teamintro.html">➣ 团队简介</a></li>
-                            <li><a href="http://localhost:8081/a/enroll.html">➣ 报名表</a></li>
-                            <li><a href="http://localhost:8081/a/question.html">➣ 常见问题</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/teamintro.html">➣ 团队简介</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/enroll.html">➣ 报名表</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/question.html">➣ 常见问题</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="http://localhost:8081/a/contact.html">联系</a>
+                        <a href="http://senlinren.bjfu.edu.cn/a/contact.html">联系</a>
                     </li>
                 </ul>
             </div>
@@ -143,7 +147,7 @@
 		</div>
 	</div>
 	<p class="currentProject">
-		当前项目：<span>15</span></p>
+		当前项目：<span>28</span></p>
 	<div class="row">
 		<div class="col-md-12">
 			<div class="table-responsive">
@@ -173,7 +177,7 @@
 							<td>
 								好乐通科技有限公司</td>
 							<td>
-								&nbsp;</td>
+								进行中</td>
 						</tr>
 						<tr>
 							<td>
@@ -185,7 +189,7 @@
 							<td>
 								北京如令科技有限公司</td>
 							<td>
-								&nbsp;</td>
+								进行中</td>
 						</tr>
 						<tr>
 							<td>
@@ -197,7 +201,7 @@
 							<td>
 								&nbsp;</td>
 							<td>
-								&nbsp;</td>
+								2015.12</td>
 						</tr>
 						<tr>
 							<td>
@@ -209,7 +213,7 @@
 							<td>
 								人民解放军某部队</td>
 							<td>
-								&nbsp;</td>
+								进行中</td>
 						</tr>
 						<tr>
 							<td>
@@ -221,7 +225,7 @@
 							<td>
 								中国妇女发展基金会蓝玫瑰基金会</td>
 							<td>
-								&nbsp;</td>
+								进行中</td>
 						</tr>
 						<tr>
 							<td>
@@ -343,6 +347,162 @@
 							<td>
 								2007.9</td>
 						</tr>
+						<tr>
+							<td>
+								16</td>
+							<td>
+								云智系统客户端开发</td>
+							<td>
+								应用软件</td>
+							<td>
+								北京天云智汇科技有限公司</td>
+							<td>
+								进行中</td>
+						</tr>
+						<tr>
+							<td>
+								17</td>
+							<td>
+								面向大数据量的矢量瓦片裁剪、索引及可视化算法开发</td>
+							<td>
+								算法库</td>
+							<td>
+								中国地质调查局发展研究中心</td>
+							<td>
+								2016.6</td>
+						</tr>
+						<tr>
+							<td>
+								18</td>
+							<td>
+								森林生态大数据服务平台</td>
+							<td>
+								应用软件</td>
+							<td>
+								中国森林生态系统研究网络</td>
+							<td>
+								2016</td>
+						</tr>
+						<tr>
+							<td>
+								19</td>
+							<td>
+								北京市园林绿化局&ldquo;十三五&rdquo;信息化规划</td>
+							<td>
+								发展规划</td>
+							<td>
+								北京市园林绿化局</td>
+							<td>
+								2016.6</td>
+						</tr>
+						<tr>
+							<td>
+								20</td>
+							<td>
+								&ldquo;猿点&rdquo;招聘app</td>
+							<td>
+								应用软件</td>
+							<td>
+								2016年中国数据挖掘竞赛</td>
+							<td>
+								2016.4</td>
+						</tr>
+						<tr>
+							<td>
+								21</td>
+							<td>
+								中国水土保持学会奖项申报、水平评价系统</td>
+							<td>
+								应用软件</td>
+							<td>
+								中国水土保持学会</td>
+							<td>
+								2016.5</td>
+						</tr>
+						<tr>
+							<td>
+								22</td>
+							<td>
+								中国水土保持学会内容管理系统</td>
+							<td>
+								应用软件</td>
+							<td>
+								中国水土保持学会</td>
+							<td>
+								2015.8</td>
+						</tr>
+						<tr>
+							<td>
+								23</td>
+							<td>
+								黑龙江省服务外包综合管理平台</td>
+							<td>
+								应用软件</td>
+							<td>
+								黑龙江省外贸公共服务平台</td>
+							<td>
+								2014.6</td>
+						</tr>
+						<tr>
+							<td>
+								24</td>
+							<td>
+								某高校研究生管理系统</td>
+							<td>
+								应用软件</td>
+							<td>
+								哈尔滨市某高校</td>
+							<td>
+								2013.10</td>
+						</tr>
+						<tr>
+							<td>
+								25</td>
+							<td>
+								基于物联网的林业生态监测一体化平台</td>
+							<td>
+								应用软件</td>
+							<td>
+								北京林业大学</td>
+							<td>
+								2016</td>
+						</tr>
+						<tr>
+							<td>
+								26</td>
+							<td>
+								我国六价铬工业污染源解析与控制策略研究</td>
+							<td>
+								应用软件</td>
+							<td>
+								国家环境保护公益性行业科研专项项目</td>
+							<td>
+								2013.12</td>
+						</tr>
+						<tr>
+							<td>
+								27</td>
+							<td>
+								剂量-反应评估软件开发</td>
+							<td>
+								应用软件</td>
+							<td>
+								中国农业科学研究院农业质量标准与检测技术研究所</td>
+							<td>
+								2012.12</td>
+						</tr>
+						<tr>
+							<td>
+								28</td>
+							<td>
+								剂量-反应评估数学模型优化和验证分析</td>
+							<td>
+								应用软件</td>
+							<td>
+								中国农业科学研究院农业质量标准与检测技术研究所</td>
+							<td>
+								2012.12</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
@@ -363,12 +523,12 @@
 		<!--<div class="row">
 			<div class="col-md-12"><div class="bottomeline"></div></div>
 		</div>-->
-		<div class="row">
+		<!--<div class="row">
 			<div class="col-md-12 copyRight">
 				<center><p>Copyright © 2016 <b><a href="http://senlinren.bjfu.edu.cn">senlinren.bjfu.edu.cn</a></b> All rights reserved.</p></center>
                 <center style="margin-bottom: 45px;margin-top: 30px;"><img src="/templets/senlinren/images/staticNum.png"></center>
 			</div>
-		</div>
+		</div>-->
 	</div>
     <div class="bottomeBar" style="opacity: 0.6;"> 
 		<div class="container">
@@ -415,8 +575,8 @@
 
     
 	<div class="bottomeGreen">
-		<center><p>版权所有 北京林业大学林木分子育种高精尖创新中心   COPYRIGHT  2010  KYC.BJFU.EDU.CN ALL RIGHTS RESERVED</p></center>
-		<center><p>电话（传真）：010-62330000     地址：北京市海淀区清华东路35号     邮政编码:100083     Email:aaa@bjfu.edu.cn    </p></center>
+		<center><p>版权所有 北京林业大学信息学院森林人团队   COPYRIGHT  2016  SENLINREN.BJFU.EDU.CN ALL RIGHTS RESERVED</p></center>
+		<center><p>电话（传真）：010-62336651     地址：北京市海淀区清华东路35号     邮政编码:100083     Email:senlinren@bjfu.edu.cn    </p></center>
 	</div>
 </div>
 </body>

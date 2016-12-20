@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>森林人</title>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/main.css">
+    <link rel="shortcut icon" href="/templets/senlinren/images/favicon.ico" />
+    <link rel="bookmark" href="/templets/senlinren/images/favicon.ico" />
+</head>
+
+<body>
+   
+<script>
+        $(document).ready(function(){
+            console.log("登陆了！！");
+             $('.slidedown#design-team').hover(function(){
+                 console.log("hover 触发");
+                $(".slidedown#design-team img").slideUp()(300);
+                }, function() {
+                 console.log("hover 结束");                    
+                    $(".slidedown#design-team img").slideDown()(300);
+	});
+
+    $('.slidedown#ios-team').hover(function(){
+                 console.log("hover 触发");
+                $(".slidedown#ios-team img").slideUp()(300);
+                }, function() {
+                 console.log("hover 结束");                    
+                    $(".slidedown#ios-team img").slideDown()(300);
+	});
+
+    $('.slidedown#hardware-team').hover(function(){
+                 console.log("hover 触发");
+                $(".slidedown#hardware-team img").slideUp()(300);
+                }, function() {
+                 console.log("hover 结束");                    
+                    $(".slidedown#hardware-team img").slideDown()(300);
+	});
+
+    $('.slidedown#android-team').hover(function(){
+                 console.log("hover 触发");
+                $(".slidedown#android-team img").slideUp()(300);
+                }, function() {
+                 console.log("hover 结束");                    
+                    $(".slidedown#android-team img").slideDown()(300);
+	});
+
+    $('.slidedown#desktop-team').hover(function(){
+                 console.log("hover 触发");
+                $(".slidedown#desktop-team img").slideUp()(300);
+                }, function() {
+                 console.log("hover 结束");                    
+                    $(".slidedown#desktop-team img").slideDown()(300);
+	});
+
+    $('.slidedown#server-team').hover(function(){
+                 console.log("hover 触发");
+                $(".slidedown#server-team img").slideUp()(300);
+                }, function() {
+                 console.log("hover 结束");                    
+                    $(".slidedown#server-team img").slideDown()(300);
+	});
+        });
+       
+
+</script>
+   <script>
+    function menuFix(){
+		  	var sfEls=document.getElementById("menu").getElementsByTagName("li");
+		    for(var index=0;index<sfEls.length;index++){
+			    sfEls[index].onmouseover=function(){
+		        	this.className+=(this.className.length > 0 ? " " : "") + "sfhover";
+			    }
+			    sfEls[index].onmouseout=function(){
+					this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
+			    }
+		    }
+		}
+		window.onload = menuFix;
+
+		$(function(){
+		    $("#myCarousel").carousel({
+		        interval:4000
+		    });
+		});
+</script>
+<div class="row">
+    <div class="top-green-bar"></div>
+</div>
+<div class="top-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 top-bar-logo">
+                <a href="index.html"><img src="/templets/senlinren/images/logo.png"></a>
+            </div>
+            <div class="col-md-2 top-bar-title">
+                <a href="index.html"><img class="first-img" src="/templets/senlinren/images/name.png">
+                    <img src="/templets/senlinren/images/subName.png"></a>
+            </div>
+            <div class="col-md-5 top-bar-word">
+                <div>森林人只培养IT领袖和行业精英</div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 top-bar-right">
+                <div style="color: #1F5900;font-weight: bold;">senlinren.bjfu.edu.cn</div>
+                <span>
+                    <form action="/plus/search.php" method="post" id="search" name="search">
+                        <input type="text" placeholder="搜索" id="keyword" name="keyword">
+                        <img src="/templets/senlinren/images/searchIcon.png" onclick="search.submit()">
+                    </form>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 导航 -->
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="menu">
+                <ul style="padding: 0;">
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">简介<b class="caret"></b></a>
+                        <ul>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_duce.html">➣ 团队简介</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/teacher.html">➣ 师资力量</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/culture.html">➣ 团队文化</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_team.html">➣ 团队结构</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_public.html">➣ 公众号</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/a/scientific.html">科研
+                    </li>
+                    <li>
+							<a href="http://senlinren.bjfu.edu.cn/a/cooperation.html">合作</a>
+                    </li>
+                    <li>
+                        <a href="#">招新<b class="caret"></b></a>
+                        <ul>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/teamintro.html">➣ 团队简介</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/enroll.html">➣ 报名表</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/question.html">➣ 常见问题</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/a/contact.html">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+    <div class="container">
+        <div class="row" id="singlepage1-topimg">
+        </div>
+        <div class="row">
+            <div class="col-md-3" id="singlepage1-left">
+                <p>简介|Introduction</p>
+                <ul>
+                    <li><a href="http://senlinren.bjfu.edu.cn/a/intro_duce.html">● 团队简介</a></li>
+                    <li><a href="http://senlinren.bjfu.edu.cn/a/teacher.html">● 师资力量</a></li>
+                    <li><a href="http://senlinren.bjfu.edu.cn/a/culture.html">● 团队文化</a></li>
+                    <li><a href="http://senlinren.bjfu.edu.cn/a/intro_team.html">● 团队小组结构</a></li>
+                    <li><a href="http://senlinren.bjfu.edu.cn/a/intro_public.html">● 公众号</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="intro-content">
+                    <p class="title">导师介绍</p>
+                    <!--许福-->
+                    <div>
+                        <div class="left-img-info">
+                            <div class="transfer">
+                                <img src="/templets/senlinren/images/xu.png">
+                            </div>
+                            <div class="transfer middlediv">
+                                <span class="div-span1"><strong>许福</strong></span><br><br>
+                                <span class="div-span2">博士，副教授，硕士研究生导师，北京林业大学信息学院科研院长，中国计算机学会高级会员。</span>
+                            </div>
+                        </div>
+                        <div class="rightdiv transfer" style="padding: 20px;">
+                            <span class="div-span2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2002年毕业于北京航空航天大学，获“计算机应用技术”专业学士学位，2009年在北京航空航天大学获“计算机软件与理论”专业博士学位。参加了包括863高科技计划、国家自然科学基金、航空基金、武器装备预研基金、教育部岗位搜索引擎等多项国家和部委的科研项目。在《计算机学报》等学术刊物上发表了多篇学术论文，申报了多项发明专利。目前承担多项纵向及横向课题的研究开发工作。</span>
+                            <br>
+                            <div class="rightdiv-div">
+                                <span style="background-color: #C7D3B0;height: 50px;width: 400px;color:#697F4A;">E-mail: xufu@bjfu.edu.cn.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strangediv">
+                        <!-- ??这个div处于前一个div下方??-->
+                    </div>
+                    <!--上官老师-->
+                    <div>
+                        <div class="transfer">
+                            <img src="/templets/senlinren/images/shang.png">
+                        </div>
+                        <div class="transfer middlediv">
+                            <span class="div-span1"><strong>上官大堰</strong></span><br><br>
+                            <span class="div-span2">博士，中国计算机学会会员，A-sifa国际动画学会会员，教育部计算机设计大赛评审专家。</span>
+                        </div>
+
+                        <div class="rightdiv transfer" style="padding: 20px;">
+                            <span class="div-span2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;研究领域包含了交互设计、用户体验设计、虚拟现实与动画仿真等。2009年毕业于北京大学，同年2月进入北京林业大学担任本科生、研究生的教学工作。负责主持教育部人文社科创新项目多项，参与国家社会科学基金1项。多篇论文发表于《装饰》、《艺术评论》等CSSCI学术期刊，指导学生设计作品多次荣获海内外赛事嘉奖。同时拥有IBM中国研究院 、IBM中国开发中心、阿里巴巴雅虎中国、美国KWP GROUP、China lottery online等顶级IT、互联网公司从业经历，在数字艺术及相关行业实战经验比较丰富。</span>
+                            <br>
+                            <div class="center rightdiv-div">
+                                <span style="background-color: #C7D3B0;height: 50px;width: 400px;color:#697F4A;">E-mail: Shanggdy@bjfu.edu.cn.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strangediv">
+                        <!-- ??这个div处于前一个div下方??-->
+                    </div>
+                    <!--上官老师-->
+                    <div>
+                        <div class="transfer">
+                            <img src="/templets/senlinren/images/qi.png">
+                        </div>
+                        <div class="transfer middlediv">
+                            <span class="div-span1"><strong>齐建东</strong></span><br><br>
+                            <span class="div-span2">教授，博士</span>
+                        </div>
+
+                        <div class="rightdiv transfer" style="padding: 20px;">
+                            <span class="div-span2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;涉及智能信息处理、无线传感器网络、林业物联网,主持2项国家林业局局重点课题、1项国家级十二五科技支撑子课题、排名第2参加1项国家农业科技成果转化资金课题、排名第3参加1项自然基金面上课题、主持2项北京林业大学优秀青年科技创新计划项目；主持横向课题10余项；发表学术论文多篇。开设讲授“计算机网络”、“交换与路由”、“软件工程”等课程；4+次本科学生教学评价学院第1名；指导多项国家级大学生创新训练计划；主持“双语教学”、“精品课程”本科教改课题2项；副主编“十二五”国家级精品教材1部。2015北京林业大学“家琪云龙”优秀青年教师奖获得者。</span>
+                            <br>
+                            <div class="center rightdiv-div">
+                                <span style="background-color: #C7D3B0;height: 50px;width: 400px;color:#697F4A;">E-mail: qijd@bjfu.edu.cn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strangediv">
+                        <!-- ??这个div处于前一个div下方??-->
+                    </div>
+                    <!--张老师-->
+                    <div>
+                        <div class="transfer">
+                            <img src="/templets/senlinren/images/zhang.png">
+                        </div>
+                        <div class="transfer middlediv">
+                            <span class="div-span1"><strong>张海燕</strong></span><br><br>
+                            <span class="div-span2">博士，副教授。2004年毕业于哈尔滨工程大学获计算机应用技术工学博士学位，北京林业大学信息学院计算机教研室主任。</span>
+                        </div>
+
+                        <div class="rightdiv transfer" style="padding: 20px;">
+                            <span class="div-span2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;曾参与十一五科技支撑项目“速生丰产林生产经营过程信息化关键技术研究与应用——速生丰产林生产、经营过程的可视化技术及共性信息技术的研究”、国家自然科学基金“虚拟园林景观中植物茎叶器官的交互可视化表达方法研究”、“公益性行业科研专项经费项目——农药剂量反应关系评估技术研究”和“环保公益性行业科研专项经费项目——我国六价铬典型工业污染源治理咨询服务平台”等多项课题。发表学术论文10余篇。</span>
+                            <br>
+                            <div class="center rightdiv-div">
+                                <span style="background-color: #C7D3B0;height: 50px;width: 400px;color:#697F4A;">E-mail: zhy@bjfu.edu.cn.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strangediv">
+                        <!-- ??这个div处于前一个div下方??-->
+                    </div>
+                    <!--孙老师-->
+                    <div>
+                        <div class="transfer">
+                            <img src="/templets/senlinren/images/sun.png">
+                        </div>
+                        <div class="transfer middlediv">
+                            <span class="div-span1"><strong>孙 钰</strong></span><br><br>
+                            <span class="div-span2">博士，讲师。擅长Python数据分析和Android开发，主要研究方向为深度学习及模式识别。</span>
+                        </div>
+
+                        <div class="rightdiv transfer" style="padding: 20px;">
+                            <span class="div-span2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2008年毕业于北京航空航天大学，获“信息与通信系统”专业学士学位。2014年毕业于北京航空航天大学，获“信息网络”专业博士学位。参与物联网团队创新项目、国家自然科学基金、863高科技计划等多项科研项目，主持横向课题3项，获专利3项，以第一或责任作者身份在《Applied Physics Letters》，《Optical Express》等国际顶级期刊发表SCI论文6篇。</span>
+                            <br>
+                            <div class="center rightdiv-div">
+                                <span style="background-color: #C7D3B0;height: 50px;width: 400px;color:#697F4A;">E-mail: sunyu@bjfu.edu.cn.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strangediv">
+                        <!-- ??这个div处于前一个div下方??-->
+                    </div>
+                    <!--付老师-->
+                    <div>
+                        <div class="transfer">
+                            <img src="/templets/senlinren/images/fu.png">
+                        </div>
+                        <div class="transfer middlediv">
+                            <span class="div-span1"><strong>付红萍</strong></span><br><br>
+                            <span class="div-span2">博士，讲师。</span>
+                        </div>
+
+                        <div class="rightdiv transfer" style="padding: 20px;">
+                            <span class="div-span2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016年获得北京理工大学“计算机软件与理论”专业博士学位，主要从事人工智能、数据挖掘方向的研究，主持了“研究生科技创新活动专项计划”项目，同时参与了国防科工局信息化项目、国家自然科学基金等多个项目的研发，在Neurocomputing(2015 IF: 2.392)、Frontiers in Computational Neuroscience(2015 IF: 2.653)、ECIR等国际知名SCI期刊和会议上发表了多篇高水平论文。</span>
+                            <br>
+                            <div class="center rightdiv-div">
+                                <span style="background-color: #C7D3B0;height: 50px;width: 400px;color:#697F4A;">E-mail: fhongping@bjfu.edu.cn.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strangediv">
+                        <!-- ??这个div处于前一个div下方??-->
+                    </div>
+
+                    <!--崔晓辉-->
+                    <div>
+                        <div class="transfer">
+                            <img src="/templets/senlinren/images/hui.png">
+                        </div>
+                        <div class="transfer middlediv">
+                            <span class="div-span1"><strong>崔晓辉</strong></span><br><br>
+                            <span class="div-span2">博士，讲师，北京林业大学信息学院，计算机软件教研室，中国计算机学会会员。</span>
+                        </div>
+
+                        <div class="rightdiv transfer" style="padding: 20px;">
+                            <span class="div-span2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2007年毕业于哈尔滨工程大学，获“计算机科学与技术”专业学士学位。2013年在哈尔滨工程大学获得“计算机应用技术”专业博士学位。参加了包括国家发改委“信息安全”专项、国家自然科学基金、黑龙江省自然科学基金、海军装备预研项目等。在《软件学报》等学术刊物发表多篇学术论文。目前承担多项纵向和横向课题的研发工作。</span>
+                            <br>
+                            <div class="center rightdiv-div">
+                                <span style="background-color: #C7D3B0;height: 50px;width: 400px;color:#697F4A;">E-mail: cuixiaohui@bjfu.edu.cn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strangediv">
+                        <!-- ??这个div处于前一个div下方??-->
+                    </div>
+
+                    <!--韩慧-->
+                    <div>
+                        <div class="transfer">
+                            <img src="/templets/senlinren/images/hanhui.png">
+                        </div>
+                        <div class="transfer middlediv">
+                            <span class="div-span1"><strong>韩慧</strong></span><br><br>
+                            <span class="div-span2">博士，讲师，北京林业大学信息学院，计算机软件教研室</span>
+                        </div>
+
+                        <div class="rightdiv transfer" style="padding: 20px;">
+                            <span class="div-span2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2007年毕业于清华大学，获“控制科学与工程”博士学位。主要研究方向是数据挖掘，研究的内容包括不均衡数据集的分类问题、关联规则挖掘、统计分析、缺失值填补、信息抽取等，并且在数据挖掘相关领域的期刊或者会议上发表多篇学术论文。参编多本计算机教材，参与多项科研项目及横向课题。</span>
+                            <br>
+                            <div class="center rightdiv-div">
+                                <span style="background-color: #C7D3B0;height: 50px;width: 400px;color:#697F4A;">E-mail: hanhuie@126.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strangediv">
+                        <!-- ??这个div处于前一个div下方??-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="intro-content" id="intro-team">
+                <p class="title">团队小组</p>
+                <div class="col-md-4">
+                    <div class="slidedown" id="ios-team">
+                        <img src="/templets/senlinren/images/ios-team.png">
+                        <div class="jieshao">
+                            <h3>IOS小组</h3>
+                            <p>IOS小组致力于开发最简洁，最友好，最高效的ios app！</p>
+                        </div>
+                    </div>
+                    <div class="slidedown" id="hardware-team">
+                        <img src="/templets/senlinren/images/hardware-team.png">
+                        <div class="jieshao">
+                            <h3>硬件小组</h3>
+                            <p>通过推进硬件计算的研究,实现软件服务和硬件设备的创新。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slidedown" id="android-team">
+                        <img src="/templets/senlinren/images/android-team.png">
+                        <div class="jieshao">
+                            <h3>安卓小组</h3>
+                            <p>我们主要进行Android手机应用的开发工作。共完成了好乐通等多款app的设计和开发。</p>
+                        </div>
+                    </div>
+                    <div class="slidedown" id="desktop-team">
+                        <img src="/templets/senlinren/images/desktop-team.png">
+                        <div class="jieshao">
+                            <h3>桌面前端小组</h3>
+                            <p>我们关注前端技术,探讨前端难题,紧跟互联网潮流。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slidedown" id="server-team">
+                        <img src="/templets/senlinren/images/server-team.png">
+                        <div class="jieshao">
+                            <h3>服务器小组</h3>
+                            <p>我们致力于提供最稳定的服务器。</p>
+                        </div>
+                    </div>
+                    <div class="slidedown" id="design-team">
+                        <img src="/templets/senlinren/images/design-team.png">
+                        <div class="jieshao">
+                            <h3>设计小组</h3>
+                            <p>交互设计的理论园地，欢迎任何程序员、界面设计师、交互设计师、加入我们！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- 底部栏 -->
+<div id="bottom-all">
+	<div class="container">
+		<!--<div class="row">
+			<div class="col-md-12"><div class="bottomeline"></div></div>
+		</div>-->
+		<!--<div class="row">
+			<div class="col-md-12 copyRight">
+				<center><p>Copyright © 2016 <b><a href="http://senlinren.bjfu.edu.cn">senlinren.bjfu.edu.cn</a></b> All rights reserved.</p></center>
+                <center style="margin-bottom: 45px;margin-top: 30px;"><img src="/templets/senlinren/images/staticNum.png"></center>
+			</div>
+		</div>-->
+	</div>
+    <div class="bottomeBar" style="opacity: 0.6;"> 
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 oftenLinks">常用链接</div>
+				<div class="col-md-3 links">
+					<ul>
+						<li><a href="http://www.bjfu.edu.cn/" target="_blank">北京林业大学</a></li>
+						<li><a href="http://www.hie.edu.cn/" target="_blank">高等教育学会</a></li>
+						<li><a href="http://it.bjfu.edu.cn/" target="_blank">信息学院</a></li>
+						<li><a href="http://jwc.bjfu.edu.cn/" target="_blank">北京林业大学教务处</a></li>
+						<li><a href="http://ad.bjfu.edu.cn/" target="_blank">艺术设计学院</a></li>
+						<li><a href="http://cy.ncss.org.cn/" target="_blank">大创网</a></li>
+					</ul>
+				</div>
+				<div class="col-md-1 col-md-offset-1 logo">
+					<img src="/templets/senlinren/images/logo.png">
+				</div>
+				<div class="col-md-1 col-md-offset-1 qrcode">
+					<center><img src="/templets/senlinren/images/QRImg.png"></center>
+					<p>扫码关注公众号</p>
+				</div>
+				<div class="col-md-1 qrcode">
+					<center><img src="/templets/senlinren/images/baoming.png"></center>
+					<p>扫码报名森林人</p>
+				</div>
+				<div class="col-md-3">
+					<div>
+						<img src="/templets/senlinren/images/social_01.png">
+						<img src="/templets/senlinren/images/social_02.png">
+						<img src="/templets/senlinren/images/social_03.png">
+						<img src="/templets/senlinren/images/social_04.png">
+					</div>
+					<div>
+						<img src="/templets/senlinren/images/social_05.png">
+						<img src="/templets/senlinren/images/social_06.png">
+						<img src="/templets/senlinren/images/social_07.png">
+						<img src="/templets/senlinren/images/social_08.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    
+	<div class="bottomeGreen">
+		<center><p>版权所有 北京林业大学信息学院森林人团队   COPYRIGHT  2016  SENLINREN.BJFU.EDU.CN ALL RIGHTS RESERVED</p></center>
+		<center><p>电话（传真）：010-62336651     地址：北京市海淀区清华东路35号     邮政编码:100083     Email:senlinren@bjfu.edu.cn    </p></center>
+	</div>
+</div>
+</body>
+
+</html>

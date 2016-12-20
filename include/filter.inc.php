@@ -43,7 +43,10 @@ function _FilterAll($fk, &$svar)
     if (!$magic_quotes_gpc) {
         $svar = addslashes($svar);
     }
-    return $svar;
+	
+	//修复变量覆盖漏洞，-> http://www.dedemao.com/study/1576.html
+	return addslashes($svar);
+   // return $svar;
 }
 
 /* 对_GET,_POST,_COOKIE进行过滤 */

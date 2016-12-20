@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>森林人</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/main.css">
+    <link rel="shortcut icon" href="/templets/senlinren/images/favicon.ico"/>
+	<link rel="bookmark" href="/templets/senlinren/images/favicon.ico"/>
+</head>
+
+<body>
+    <script>
+    function menuFix(){
+		  	var sfEls=document.getElementById("menu").getElementsByTagName("li");
+		    for(var index=0;index<sfEls.length;index++){
+			    sfEls[index].onmouseover=function(){
+		        	this.className+=(this.className.length > 0 ? " " : "") + "sfhover";
+			    }
+			    sfEls[index].onmouseout=function(){
+					this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
+			    }
+		    }
+		}
+		window.onload = menuFix;
+
+		$(function(){
+		    $("#myCarousel").carousel({
+		        interval:4000
+		    });
+		});
+</script>
+<div class="row">
+    <div class="top-green-bar"></div>
+</div>
+<div class="top-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 top-bar-logo">
+                <a href="index.html"><img src="/templets/senlinren/images/logo.png"></a>
+            </div>
+            <div class="col-md-2 top-bar-title">
+                <a href="index.html"><img class="first-img" src="/templets/senlinren/images/name.png">
+                    <img src="/templets/senlinren/images/subName.png"></a>
+            </div>
+            <div class="col-md-5 top-bar-word">
+                <div>森林人只培养IT领袖和行业精英</div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 top-bar-right">
+                <div style="color: #1F5900;font-weight: bold;">senlinren.bjfu.edu.cn</div>
+                <span>
+                    <form action="/plus/search.php" method="post" id="search" name="search">
+                        <input type="text" placeholder="搜索" id="keyword" name="keyword">
+                        <img src="/templets/senlinren/images/searchIcon.png" onclick="search.submit()">
+                    </form>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 导航 -->
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="menu">
+                <ul>
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">简介<b class="caret"></b></a>
+                        <ul>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_duce.html">➣ 团队简介</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/teacher.html">➣ 师资力量</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/culture.html">➣ 团队文化</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_team.html">➣ 团队结构</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_public.html">➣ 公众号</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/a/scientific.html">科研
+                    </li>
+                    <li>
+							<a href="http://senlinren.bjfu.edu.cn/a/cooperation.html">合作</a>
+                    </li>
+                    <li>
+                        <a href="#">招新<b class="caret"></b></a>
+                        <ul>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/teamintro.html">➣ 团队简介</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/enroll.html">➣ 报名表</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/question.html">➣ 常见问题</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/a/contact.html">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+
+    <div class="container">
+        <div class="row" id="singlepage1-topimg">
+        </div>
+        <div>
+            <h2 style="text-align: center;">林业信息大讲堂-机器学习入门</h2>
+            <div>
+                <p style="text-align: center;">来源：森林人团队 &nbsp;&nbsp;|&nbsp;&nbsp; 时间：2016-12-12 &nbsp;&nbsp;|&nbsp;&nbsp; 访问量：<script src="/plus/count.php?view=yes&aid=10&mid=1"type='text/javascript' language="javascript"></script></p>
+            </div>
+            <div style="margin-bottom: 100px;">
+                <p><div style="text-align: center;margin-top:20px;">
+	<span style="font-size:28px;border: 2px dotted green;border-radius:25px;padding:10px;">林业信息大讲堂第一期开讲啦！！！</span></div>
+<section style="margin-top: 15px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; display: inline-block; vertical-align: middle; width: 6px; height: 6px; border-radius: 100%; background-color: green;">
+	<div style="text-align: center;">
+		&nbsp;</div>
+</section>
+<section style="margin-bottom:5px;margin-left:-2px;margin-right:-2px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; display: inline-block; vertical-align: middle; width: 1000px; border-bottom: 2px dotted green;">
+	<div style="text-align: center;">
+		&nbsp;</div>
+</section>
+<section style="margin-top: 15px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; display: inline-block; vertical-align: middle; width: 6px; height: 6px; border-radius: 100%; background-color: green;">
+	<div style="text-align: center;">
+		&nbsp;</div>
+</section>
+<br />
+<div style="padding-left:10px;background-color:#efefef;">
+	<span style="color:#ff0000;"><span style="font-size:18px;"><b>什么？林业信息大讲堂第一期就要开讲啦！</b></span></span><br />
+	<span style="font-size:18px;"><span style="color:#ff0000;"><b>快带小伙伴来参加激动人心的专家报告吧！</b></span></span></div>
+<br />
+<div style="text-align: center; background-color: rgb(239, 239, 239);">
+	<img alt="" src="/uploads/100912/head.png" style="width: 750px;margin-bottom:10px;" /></div>
+<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+	<section style="margin: 0.5em 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; text-align: center;">
+		<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+			<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; width: 9px; height: 9px; float: left; border-top: 2px solid rgb(71, 193, 168); border-left: 2px solid rgb(71, 193, 168);">
+				<div>
+					&nbsp;</div>
+			</section>
+			<section style="margin: -5px 0px; padding: 0px 4px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+				<section style="margin: 0px; padding: 10px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; border-width: 2px; border-style: solid; border-color: rgb(71, 193, 168);">
+					<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+						<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+							<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; text-align: left;">
+								<p>
+									<span style="font-size:18px;">内容简介：</span></p>
+								<p>
+									<span style="font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机器学习(Machine Learning, ML)是一门多领域交叉学科，专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。简言之，机器学习这门学科所关注的问题是：计算机程序如何随着经验积累自动提高性能。机器学习是人工智能的核心，是使计算机具有智能的根本途径，其应用遍及人工智能的各个领域。本次讲座的内容包括机器学习的理论基础及来源，应用领域，前沿研究及未来发展方向，有兴趣的朋友们欢迎前来参加讲座，相信你们一定会有所收获~</span></p>
+							</section>
+						</section>
+					</section>
+				</section>
+			</section>
+			<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; width: 9px; height: 9px; float: left; border-bottom: 2px solid rgb(71, 193, 168); border-left: 2px solid rgb(71, 193, 168);">
+				<div>
+					&nbsp;</div>
+			</section>
+			<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; width: 9px; height: 9px; float: right; border-bottom: 2px solid rgb(71, 193, 168); border-right: 2px solid rgb(71, 193, 168);">
+				<div>
+					&nbsp;</div>
+			</section>
+			<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; clear: both;">
+				<div>
+					&nbsp;</div>
+			</section>
+		</section>
+	</section>
+</section>
+<div style="text-align: center;">
+	<img alt="" src="/uploads/100912/big-logo.png" style="width: 350px;margin-bottom:10px;" /></div>
+<section style="margin: 0.5em 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; text-align: center;">
+	<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+		<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; width: 9px; height: 9px; float: left; border-top: 2px solid rgb(71, 193, 168); border-left: 2px solid rgb(71, 193, 168);">
+			<div>
+				&nbsp;</div>
+		</section>
+		<section style="margin: -5px 0px; padding: 0px 4px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+			<section style="margin: 0px; padding: 10px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; border-width: 2px; border-style: solid; border-color: rgb(71, 193, 168);">
+				<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+					<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+						<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; text-align: left;">
+							<p>
+								<span style="font-size:18px;"><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important; color: rgb(255, 0, 0);">主讲人简介：</span></span></p>
+							<p>
+								<span style="font-size:18px;"><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important; text-indent: 2em; line-height: 1.6;">&nbsp; &nbsp; &nbsp; &nbsp;贾荣飞，北京航空航天大学博士毕业，目前担任量化派公司副总裁。博士毕业后曾在搜狗公司任职十年，在搜索、推荐、机器学习等领域有深入理解和丰富经验，作为商业算法负责人在搜狗公司业务增长中发挥了重要作用。</span></span></p>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+		<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; width: 9px; height: 9px; float: left; border-bottom: 2px solid rgb(71, 193, 168); border-left: 2px solid rgb(71, 193, 168);">
+			<div>
+				&nbsp;</div>
+		</section>
+		<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; width: 9px; height: 9px; float: right; border-bottom: 2px solid rgb(71, 193, 168); border-right: 2px solid rgb(71, 193, 168);">
+			<div>
+				&nbsp;</div>
+		</section>
+		<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; clear: both;">
+			<div>
+				&nbsp;</div>
+		</section>
+	</section>
+</section>
+<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+	<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+		<section style="margin: 0.5em 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; text-align: center;">
+			<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+				<section style="margin: -5px 0px; padding: 0px 4px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+					<section style="margin: 0px; padding: 10px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; border-width: 2px; border-style: solid; border-color: rgb(71, 193, 168);">
+						<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+							<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;">
+								<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important; text-align: left;">
+									<p>
+										<span style="font-size:18px;"><span style="margin: 0px; padding: 0px; max-width: 100%; font-family: 微软雅黑; color: rgb(255, 0, 0); box-sizing: border-box !important; word-wrap: break-word !important;">时间：2016.12.14 周三晚7点</span></span></p>
+									<p>
+										<span style="font-size:18px;"><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important; text-indent: 0em; line-height: 1.6; color: rgb(255, 0, 0);">地点：北京林业大学学研 A0101</span></span></p>
+									<p>
+										<span style="font-size:18px;"><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important; color: rgb(255, 0, 0);">林业信息大讲堂与你不见不散哟~</span></span></p>
+								</section>
+							</section>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+</section>
+</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部栏 -->
+<div id="bottom-all">
+	<div class="container">
+		<!--<div class="row">
+			<div class="col-md-12"><div class="bottomeline"></div></div>
+		</div>-->
+		<!--<div class="row">
+			<div class="col-md-12 copyRight">
+				<center><p>Copyright © 2016 <b><a href="http://senlinren.bjfu.edu.cn">senlinren.bjfu.edu.cn</a></b> All rights reserved.</p></center>
+                <center style="margin-bottom: 45px;margin-top: 30px;"><img src="/templets/senlinren/images/staticNum.png"></center>
+			</div>
+		</div>-->
+	</div>
+    <div class="bottomeBar" style="opacity: 0.6;"> 
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 oftenLinks">常用链接</div>
+				<div class="col-md-3 links">
+					<ul>
+						<li><a href="http://www.bjfu.edu.cn/" target="_blank">北京林业大学</a></li>
+						<li><a href="http://www.hie.edu.cn/" target="_blank">高等教育学会</a></li>
+						<li><a href="http://it.bjfu.edu.cn/" target="_blank">信息学院</a></li>
+						<li><a href="http://jwc.bjfu.edu.cn/" target="_blank">北京林业大学教务处</a></li>
+						<li><a href="http://ad.bjfu.edu.cn/" target="_blank">艺术设计学院</a></li>
+						<li><a href="http://cy.ncss.org.cn/" target="_blank">大创网</a></li>
+					</ul>
+				</div>
+				<div class="col-md-1 col-md-offset-1 logo">
+					<img src="/templets/senlinren/images/logo.png">
+				</div>
+				<div class="col-md-1 col-md-offset-1 qrcode">
+					<center><img src="/templets/senlinren/images/QRImg.png"></center>
+					<p>扫码关注公众号</p>
+				</div>
+				<div class="col-md-1 qrcode">
+					<center><img src="/templets/senlinren/images/baoming.png"></center>
+					<p>扫码报名森林人</p>
+				</div>
+				<div class="col-md-3">
+					<div>
+						<img src="/templets/senlinren/images/social_01.png">
+						<img src="/templets/senlinren/images/social_02.png">
+						<img src="/templets/senlinren/images/social_03.png">
+						<img src="/templets/senlinren/images/social_04.png">
+					</div>
+					<div>
+						<img src="/templets/senlinren/images/social_05.png">
+						<img src="/templets/senlinren/images/social_06.png">
+						<img src="/templets/senlinren/images/social_07.png">
+						<img src="/templets/senlinren/images/social_08.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    
+	<div class="bottomeGreen">
+		<center><p>版权所有 北京林业大学信息学院森林人团队   COPYRIGHT  2016  SENLINREN.BJFU.EDU.CN ALL RIGHTS RESERVED</p></center>
+		<center><p>电话（传真）：010-62336651     地址：北京市海淀区清华东路35号     邮政编码:100083     Email:senlinren@bjfu.edu.cn    </p></center>
+	</div>
+</div>
+</body>
+
+</html>

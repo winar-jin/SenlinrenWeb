@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>森林人</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/main.css">
+    <link rel="shortcut icon" href="/templets/senlinren/images/favicon.ico"/>
+	<link rel="bookmark" href="/templets/senlinren/images/favicon.ico"/>
+    <style>
+        a{color: #326331;}
+        a:hover{color: #993333; text-decoration:none;}
+    </style>
+</head>
+
+<body>
+    <script>
+    function menuFix(){
+		  	var sfEls=document.getElementById("menu").getElementsByTagName("li");
+		    for(var index=0;index<sfEls.length;index++){
+			    sfEls[index].onmouseover=function(){
+		        	this.className+=(this.className.length > 0 ? " " : "") + "sfhover";
+			    }
+			    sfEls[index].onmouseout=function(){
+					this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
+			    }
+		    }
+		}
+		window.onload = menuFix;
+
+		$(function(){
+		    $("#myCarousel").carousel({
+		        interval:4000
+		    });
+		});
+</script>
+<div class="row">
+    <div class="top-green-bar"></div>
+</div>
+<div class="top-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 top-bar-logo">
+                <a href="index.html"><img src="/templets/senlinren/images/logo.png"></a>
+            </div>
+            <div class="col-md-2 top-bar-title">
+                <a href="index.html"><img class="first-img" src="/templets/senlinren/images/name.png">
+                    <img src="/templets/senlinren/images/subName.png"></a>
+            </div>
+            <div class="col-md-5 top-bar-word">
+                <div>森林人只培养IT领袖和行业精英</div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 top-bar-right">
+                <div style="color: #1F5900;font-weight: bold;">senlinren.bjfu.edu.cn</div>
+                <span>
+                    <form action="/plus/search.php" method="post" id="search" name="search">
+                        <input type="text" placeholder="搜索" id="keyword" name="keyword">
+                        <img src="/templets/senlinren/images/searchIcon.png" onclick="search.submit()">
+                    </form>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 导航 -->
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="menu">
+                <ul>
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">简介<b class="caret"></b></a>
+                        <ul>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_duce.html">➣ 团队简介</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/teacher.html">➣ 师资力量</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/culture.html">➣ 团队文化</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_team.html">➣ 团队结构</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_public.html">➣ 公众号</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/a/scientific.html">科研
+                    </li>
+                    <li>
+							<a href="http://senlinren.bjfu.edu.cn/a/cooperation.html">合作</a>
+                    </li>
+                    <li>
+                        <a href="#">招新<b class="caret"></b></a>
+                        <ul>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/teamintro.html">➣ 团队简介</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/enroll.html">➣ 报名表</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/question.html">➣ 常见问题</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/a/contact.html">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+
+    <div class="container">
+        <div class="row" id="singlepage1-topimg">
+        </div>
+        <div class="row list_article_main">
+			<div class="list_article_div">
+                <p class="list_article_p1">➣&nbsp;&nbsp;<a href="/a/tongzhigonggao/2010/0922/11.html"><font color='#006600'>“机器学习入门”讲座成功举办以及录播回放</font></a></p>
+                <p class="list_article_p2">2016-12-19 </p>
+            </div><div class="list_article_div">
+                <p class="list_article_p1">➣&nbsp;&nbsp;<a href="/a/tongzhigonggao/2010/0912/10.html">林业信息大讲堂-机器学习入门</a></p>
+                <p class="list_article_p2">2016-12-12 </p>
+            </div><div class="list_article_div">
+                <p class="list_article_p1">➣&nbsp;&nbsp;<a href="/a/tongzhigonggao/2010/0909/9.html">2016森林人团队招新暨官网启动宣讲会成功举行</a></p>
+                <p class="list_article_p2">2016-12-06 </p>
+            </div><div class="list_article_div">
+                <p class="list_article_p1">➣&nbsp;&nbsp;<a href="/a/tongzhigonggao/2016/1123/6.html">信息学院模拟求职赛助力学生迈出职场第一步</a></p>
+                <p class="list_article_p2">2016-11-23 </p>
+            </div><div class="list_article_div">
+                <p class="list_article_p1">➣&nbsp;&nbsp;<a href="/a/tongzhigonggao/2016/1123/5.html">老骥伏枥传帮带 信息新人勇接棒</a></p>
+                <p class="list_article_p2">2016-11-23 </p>
+            </div><div class="list_article_div">
+                <p class="list_article_p1">➣&nbsp;&nbsp;<a href="/a/tongzhigonggao/2016/1123/4.html">信息学子在中国大学生计算机设计大赛中获奖</a></p>
+                <p class="list_article_p2">2016-11-23 </p>
+            </div><div class="list_article_div">
+                <p class="list_article_p1">➣&nbsp;&nbsp;<a href="/a/tongzhigonggao/2016/1123/3.html">信息学院学生支部书记座谈会加强思想引领</a></p>
+                <p class="list_article_p2">2016-11-23 </p>
+            </div><div class="list_article_div">
+                <p class="list_article_p1">➣&nbsp;&nbsp;<a href="/a/tongzhigonggao/2016/1123/2.html">北林学子在ACM-ICPC/CCPC程序设计竞赛中再创佳绩勇</a></p>
+                <p class="list_article_p2">2016-11-23 </p>
+            </div><div class="list_article_div">
+                <p class="list_article_p1">➣&nbsp;&nbsp;<a href="/a/tongzhigonggao/2016/1123/1.html">林业信息大讲堂-机器学习入门</a></p>
+                <p class="list_article_p2">2010-09-12 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部栏 -->
+<div id="bottom-all">
+	<div class="container">
+		<!--<div class="row">
+			<div class="col-md-12"><div class="bottomeline"></div></div>
+		</div>-->
+		<!--<div class="row">
+			<div class="col-md-12 copyRight">
+				<center><p>Copyright © 2016 <b><a href="http://senlinren.bjfu.edu.cn">senlinren.bjfu.edu.cn</a></b> All rights reserved.</p></center>
+                <center style="margin-bottom: 45px;margin-top: 30px;"><img src="/templets/senlinren/images/staticNum.png"></center>
+			</div>
+		</div>-->
+	</div>
+    <div class="bottomeBar" style="opacity: 0.6;"> 
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 oftenLinks">常用链接</div>
+				<div class="col-md-3 links">
+					<ul>
+						<li><a href="http://www.bjfu.edu.cn/" target="_blank">北京林业大学</a></li>
+						<li><a href="http://www.hie.edu.cn/" target="_blank">高等教育学会</a></li>
+						<li><a href="http://it.bjfu.edu.cn/" target="_blank">信息学院</a></li>
+						<li><a href="http://jwc.bjfu.edu.cn/" target="_blank">北京林业大学教务处</a></li>
+						<li><a href="http://ad.bjfu.edu.cn/" target="_blank">艺术设计学院</a></li>
+						<li><a href="http://cy.ncss.org.cn/" target="_blank">大创网</a></li>
+					</ul>
+				</div>
+				<div class="col-md-1 col-md-offset-1 logo">
+					<img src="/templets/senlinren/images/logo.png">
+				</div>
+				<div class="col-md-1 col-md-offset-1 qrcode">
+					<center><img src="/templets/senlinren/images/QRImg.png"></center>
+					<p>扫码关注公众号</p>
+				</div>
+				<div class="col-md-1 qrcode">
+					<center><img src="/templets/senlinren/images/baoming.png"></center>
+					<p>扫码报名森林人</p>
+				</div>
+				<div class="col-md-3">
+					<div>
+						<img src="/templets/senlinren/images/social_01.png">
+						<img src="/templets/senlinren/images/social_02.png">
+						<img src="/templets/senlinren/images/social_03.png">
+						<img src="/templets/senlinren/images/social_04.png">
+					</div>
+					<div>
+						<img src="/templets/senlinren/images/social_05.png">
+						<img src="/templets/senlinren/images/social_06.png">
+						<img src="/templets/senlinren/images/social_07.png">
+						<img src="/templets/senlinren/images/social_08.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    
+	<div class="bottomeGreen">
+		<center><p>版权所有 北京林业大学信息学院森林人团队   COPYRIGHT  2016  SENLINREN.BJFU.EDU.CN ALL RIGHTS RESERVED</p></center>
+		<center><p>电话（传真）：010-62336651     地址：北京市海淀区清华东路35号     邮政编码:100083     Email:senlinren@bjfu.edu.cn    </p></center>
+	</div>
+</div>
+</body>
+
+</html>

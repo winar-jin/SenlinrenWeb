@@ -1,12 +1,12 @@
 <?php
-$cfg_basehost = 'http://localhost:8081';
+$cfg_basehost = 'http://211.71.149.238:8888';
 $cfg_cmspath = '';
-$cfg_cookie_encode = 'TuR8oqMYw2cqppSfg3f4kAuMnuPmBr';
+$cfg_cookie_encode = 'SewcpfpuFbgbs1FfwpPbUFYdoo79';
 $cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '主页';
-$cfg_webname = '森林人';
-$cfg_adminemail = 'senlinren@bjfu.edu.cn';
+$cfg_webname = '我的网站';
+$cfg_adminemail = 'admin@dedecms.com';
 $cfg_html_editor = 'ckeditor';
 $cfg_arcdir = '/a';
 $cfg_medias_dir = '/uploads';

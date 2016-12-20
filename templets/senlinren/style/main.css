@@ -364,6 +364,267 @@ div#myCarousel {
 	margin-top: 10px;
 }
 
+
+/*团队简介单页*/
+pre{
+	background-color: #eee;
+	border:none;
+	border-radius: 0px;
+	font-size: 16px;
+	line-height: 30px;
+	font-family: Microsoft YaHei;
+}
+hr{
+	border-top: 2px solid #C5C5C5;
+	margin-bottom: 30px;
+}
+.intro-content{
+	margin-top: 10px;
+}
+.intro-content .public{
+	text-align:center;
+	float:left;
+	width:100%;
+	margin-top: 30px;
+}
+.intro-content .public-content{
+	width:50%;
+	float:left;
+}
+.intro-content .public-content img{
+	width: 50%;
+}
+.intro-content .public-content div{
+	margin-bottom:20px;
+	display:inline;
+	padding:10px;
+	background-color: #00A66D;
+	color: #ffffff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius:10px;
+}
+.intro-content img.poster{
+	width: 40%;
+	margin-top: 30px;
+}
+
+.intro-content .teamintro img{
+	width: 100%;
+}
+.intro-content .title{
+	border-left: 20px solid #359901;
+	width: 300px;
+	padding-left: 10px;
+	font-size: 18px;
+	display: inline-block;
+	border-bottom: 1px solid #359901;
+	/*padding-right: 100px;*/
+	color: #359901;
+	line-height: 30px;
+}
+.intro-content .sub-title{
+	color: #359901;
+	line-height: 30px;
+	font-size: 18px;
+	margin-top: 20px;
+}
+.intro-content .content{
+	text-indent: 2em;
+	font-size: 16px;
+	margin-top: 15px;
+	line-height: 30px;
+}
+.intro-content .content-teamfamily img{
+	width: 100%;
+}
+#video.intro-content{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#intro-team.intro-content .title{
+	display: block;
+}
+#intro-team.intro-content img{
+	width: 350px;
+	height: 150px;
+	/*margin: 20px;*/
+}
+.slidedown{
+	position:relative;
+	width: 350px;
+    height: 150px;
+}
+.slidedown img{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.slidedown .jieshao{
+	background-color: #EEF9E5;
+	margin:20px 0px;;
+	height: 150px;
+	width: 350px;
+	padding-top: 20px;
+	padding-left: 40px;
+}
+
+.intro-content .teacher-info{
+	height: 200px;
+	background-color: #7A9D5F;
+}
+.intro-content .transfer img{
+	height: 170px;
+	width: 120px;
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+}
+.intro-content .teacher-info .teacher-img p{
+	display: inline;
+
+}
+.intro-content .left-img-info{
+	/*width: 250px;
+	height: 200px;
+	background-color: #7A9D5F;*/
+}
+
+
+/*简介：导师介绍*/
+.transfer{
+	display: inline;
+	float: left;
+	background-color: #7A9D5F;
+    height: 250px;
+}
+.middlediv{
+	padding-left:20px;
+	padding-right:10px;
+	width:150px;
+	padding-top: 60px;
+	margin-right: 10px;
+	color: #fff;
+}
+.div-span1{
+	font-size: 20px;
+}
+.div-span2{
+	text-align:justify;
+	font-size: 13px;
+}
+.rightdiv{
+	width:400px;
+	height:250px;
+	display: -moz-box;
+	display:-webkit-flex;
+	display: -ms-flexbox;
+	-moz-box-orient: vertical;
+	-webkit-flex-direction:column;
+	-ms-flex-direction:column;
+	background-color: #E0E4D8;
+}
+.rightdiv-div{
+	-moz-box-flex: 1;
+	-webkit-flex:1;
+	-ms-flex:1;
+	position:relative;
+	height: 60px;
+    width: 400px;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}
+.rightdiv-div span{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:55px;
+	background-color: #E2E2E2;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.strangediv{
+	width: 100px;
+	height: 280px;
+}
+
+
+#insert-search .NeiRong{
+	padding-top: 40px;
+}
+#insert-search .NeiRong .col-md-8{
+	border-left: 2px solid #7ac943;
+	margin-bottom: 3%;
+}
+#insert-search .NavsLeftDiv p{
+	color:#5b5b5b;
+	background-color: #7ac943;
+	font-size: 18px;
+	clear:both;
+	text-align: center;
+	height: 40px;
+    line-height: 40px;
+}
+#insert-search .NavsLeftDiv ul{
+	padding-left: 0;
+}
+#insert-search .NavsLeftDiv ul li{
+	cursor: pointer;
+	color:#737373;
+	clear:both;
+	font-size: 16px;
+	padding-left: 10px;
+	height: 45px;
+	border-bottom: 2px solid #e5e5e5;
+	padding-top: 10px;
+}
+#insert-search .NavsLeftDiv ul li img{
+	padding-right: 15px;
+}
+#insert-search .Weizhi{
+	border-bottom: 2px solid #69922C;
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+#insert-search .Weizhi p{
+	color: #737373;
+	font-size: 12px;
+	text-align: right;
+}
+#insert-search .YJScontents{
+	padding-top: 15px;
+	padding-bottom: 20%;
+}
+#insert-search .YJScontents p{
+	color: #737373;
+	font-size: 15px;
+}
+#insert-search .title{
+	float: left;
+	padding-left: 15px;
+}
+#insert-search .date{
+text-align: right;
+}
+div#insert-search {
+    margin-top: 40px;
+}
+div#insert-search input#keyword {
+    width: 20%;
+    display: inline;
+}
+.form-control {
+    margin-left: 15px;}
+
+
+
+
+
+/*jie*/
 /*合作 诚邀合作、利益共享*/
 .co_title{
 	font-size:18px;
@@ -452,6 +713,7 @@ div#myCarousel {
 	border-bottom: 2px solid #B1B1B1;
 	margin-top:50px;
 	margin-bottom:20px;
+	line-height: 30px;
 }
 .contact_content{
 	padding-bottom: 150px;
@@ -460,7 +722,44 @@ div#myCarousel {
 	display: inline-block;
 	margin-bottom:5px;
 	padding-left: 10px;
+	line-height: 30px;
+	font-size: 16px;
 }
 .contact_content p{
 	padding-left: 10px;
+	line-height: 30px;
+	font-size:18px;
+}
+
+/*list_article*/
+.list_article_main{
+	margin-top: 50px;
+	margin-bottom: 150px;
+}
+.list_article_div{
+	margin-left: 50px;
+	margin-right: 50px;
+	border-bottom:1px solid #ccc;
+	margin-bottom:10px;
+}
+.list_article_p1{
+	display:inline-block;
+	width:250px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.list_article_p2{
+	display:inline-block;
+	margin: 0 auto;
+	float:right;
+	color:#326331;
+}
+.list_article_p1 a{
+	color: #326331;
+}
+.list_article_p1 a:hover{
+	color: #993333;
+	text-decoration:none;
 }

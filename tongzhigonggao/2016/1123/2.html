@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>森林人</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/main.css">
+    <link rel="shortcut icon" href="/templets/senlinren/images/favicon.ico"/>
+	<link rel="bookmark" href="/templets/senlinren/images/favicon.ico"/>
+</head>
+
+<body>
+    <script>
+    function menuFix(){
+		  	var sfEls=document.getElementById("menu").getElementsByTagName("li");
+		    for(var index=0;index<sfEls.length;index++){
+			    sfEls[index].onmouseover=function(){
+		        	this.className+=(this.className.length > 0 ? " " : "") + "sfhover";
+			    }
+			    sfEls[index].onmouseout=function(){
+					this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
+			    }
+		    }
+		}
+		window.onload = menuFix;
+
+		$(function(){
+		    $("#myCarousel").carousel({
+		        interval:4000
+		    });
+		});
+</script>
+<div class="row">
+    <div class="top-green-bar"></div>
+</div>
+<div class="top-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 top-bar-logo">
+                <a href="index.html"><img src="/templets/senlinren/images/logo.png"></a>
+            </div>
+            <div class="col-md-2 top-bar-title">
+                <a href="index.html"><img class="first-img" src="/templets/senlinren/images/name.png">
+                    <img src="/templets/senlinren/images/subName.png"></a>
+            </div>
+            <div class="col-md-5 top-bar-word">
+                <div>森林人只培养IT领袖和行业精英</div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 top-bar-right">
+                <div style="color: #1F5900;font-weight: bold;">senlinren.bjfu.edu.cn</div>
+                <span>
+                    <form action="/plus/search.php" method="post" id="search" name="search">
+                        <input type="text" placeholder="搜索" id="keyword" name="keyword">
+                        <img src="/templets/senlinren/images/searchIcon.png" onclick="search.submit()">
+                    </form>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 导航 -->
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="menu">
+                <ul style="padding: 0;">
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">简介<b class="caret"></b></a>
+                        <ul>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_duce.html">➣ 团队简介</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/teacher.html">➣ 师资力量</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/culture.html">➣ 团队文化</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_team.html">➣ 团队结构</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_public.html">➣ 公众号</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/a/scientific.html">科研
+                    </li>
+                    <li>
+							<a href="http://senlinren.bjfu.edu.cn/a/cooperation.html">合作</a>
+                    </li>
+                    <li>
+                        <a href="#">招新<b class="caret"></b></a>
+                        <ul>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/teamintro.html">➣ 团队简介</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/enroll.html">➣ 报名表</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/a/question.html">➣ 常见问题</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://senlinren.bjfu.edu.cn/a/contact.html">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+
+    <div class="container">
+        <div class="row" id="singlepage1-topimg">
+        </div>
+        <div>
+            <h2 style="text-align: center;">北林学子在ACM-ICPC/CCPC程序设计竞赛中再创佳绩勇</h2>
+            <div>
+                <p style="text-align: center;">来源：未知 &nbsp;&nbsp;|&nbsp;&nbsp; 时间：2016-11-23 &nbsp;&nbsp;|&nbsp;&nbsp; 访问量：<script src="/plus/count.php?view=yes&aid=2&mid=1"type='text/javascript' language="javascript"></script></p>
+            </div>
+            <div style="margin-bottom: 100px;">
+                <p>&nbsp;2016年9-11月，第41届ACM国际大学生程序设计竞赛亚洲区域赛现场赛、2016年中国大学生程序设计竞赛在中国大陆逐渐拉开序幕。我校参赛队员代表学校积极参赛，认真备战。最终在长春赛区、合肥赛区和杭州赛区夺得三枚铜牌，展示了北林学子自强不息、团结奋进的精神风貌。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACM竞赛是由美国计算机协会主办的国际大学生程序设计竞赛，是世界上规模最大、历史最长、影响最深的全球性计算机专业竞赛，每年吸引着全世界最著名大学的最优秀的学生参加，已经成为受到学术界、企业界共同认可的大学生程序设计竞赛。&nbsp;<br />
+&nbsp;<img border="0" orig="1.jpg" src="/uploads/allimg/161123/2226263464-0.jpg" style="border:0px;line-height:inherit;vertical-align:baseline;" />&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;从今年八月ACM-CCPC/ICPC网络赛开始，我校ACM集训队便积极组队参加，经过与全国各个高校的激烈角逐，六个赛区的现场赛全部晋级。经过一个月紧张而又有序的赛前集训，我校派出四支实力强劲的队伍分别参加了2016年中国大学生程序设计竞赛长春站、合肥站、杭州站，第41界ACM国际大学生程序设计竞赛亚洲区域赛大连站、北京站、青岛站。在比赛过程中，参赛队员沉着、冷静面对种种挑战，默契配合，团结一心，最终取得三枚铜牌的好成绩。<br />
+&nbsp;<img border="0" orig="2.jpg" src="/uploads/allimg/161123/2226263H3-1.jpg" style="border:0px;line-height:inherit;vertical-align:baseline;" />&nbsp;<br />
+杭州站参赛队员：熊瑞麒（左）、于浩源（中）、陈曙光（右）<br />
+&nbsp;<br />
+&nbsp;<img border="0" orig="3.jpg" src="/uploads/allimg/161123/2226262541-2.jpg" style="border:0px;line-height:inherit;vertical-align:baseline;" /><br />
+合肥站参赛队员：王博（左二）、熊瑞麒（右二）、邹明哲（右一）<br />
+领队：傅得强（左一）<br />
+&nbsp;<br />
+&nbsp;<img border="0" orig="4.jpg" src="/uploads/allimg/161123/22262A492-3.jpg" style="border:0px;line-height:inherit;vertical-align:baseline;" />&nbsp;<br />
+合肥站参赛队员：易彰彪（左一）、贾梓健（右二）、刘超懿（右一）<br />
+领队：邹明哲（左二）<br />
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;现场赛中，我校队员表现优异，获得CCPC-FINAL的参赛资格。11.24-27号，我校队员将奔赴宁波参加最后一场CCPC总决赛。届时，将会引起中国顶尖高校的高度重视，敬请期待。<br />
+</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部栏 -->
+<div id="bottom-all">
+	<div class="container">
+		<!--<div class="row">
+			<div class="col-md-12"><div class="bottomeline"></div></div>
+		</div>-->
+		<!--<div class="row">
+			<div class="col-md-12 copyRight">
+				<center><p>Copyright © 2016 <b><a href="http://senlinren.bjfu.edu.cn">senlinren.bjfu.edu.cn</a></b> All rights reserved.</p></center>
+                <center style="margin-bottom: 45px;margin-top: 30px;"><img src="/templets/senlinren/images/staticNum.png"></center>
+			</div>
+		</div>-->
+	</div>
+    <div class="bottomeBar" style="opacity: 0.6;"> 
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 oftenLinks">常用链接</div>
+				<div class="col-md-3 links">
+					<ul>
+						<li><a href="http://www.bjfu.edu.cn/" target="_blank">北京林业大学</a></li>
+						<li><a href="http://www.hie.edu.cn/" target="_blank">高等教育学会</a></li>
+						<li><a href="http://it.bjfu.edu.cn/" target="_blank">信息学院</a></li>
+						<li><a href="http://jwc.bjfu.edu.cn/" target="_blank">北京林业大学教务处</a></li>
+						<li><a href="http://ad.bjfu.edu.cn/" target="_blank">艺术设计学院</a></li>
+						<li><a href="http://cy.ncss.org.cn/" target="_blank">大创网</a></li>
+					</ul>
+				</div>
+				<div class="col-md-1 col-md-offset-1 logo">
+					<img src="/templets/senlinren/images/logo.png">
+				</div>
+				<div class="col-md-1 col-md-offset-1 qrcode">
+					<center><img src="/templets/senlinren/images/QRImg.png"></center>
+					<p>扫码关注公众号</p>
+				</div>
+				<div class="col-md-1 qrcode">
+					<center><img src="/templets/senlinren/images/baoming.png"></center>
+					<p>扫码报名森林人</p>
+				</div>
+				<div class="col-md-3">
+					<div>
+						<img src="/templets/senlinren/images/social_01.png">
+						<img src="/templets/senlinren/images/social_02.png">
+						<img src="/templets/senlinren/images/social_03.png">
+						<img src="/templets/senlinren/images/social_04.png">
+					</div>
+					<div>
+						<img src="/templets/senlinren/images/social_05.png">
+						<img src="/templets/senlinren/images/social_06.png">
+						<img src="/templets/senlinren/images/social_07.png">
+						<img src="/templets/senlinren/images/social_08.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    
+	<div class="bottomeGreen">
+		<center><p>版权所有 北京林业大学信息学院森林人团队   COPYRIGHT  2016  SENLINREN.BJFU.EDU.CN ALL RIGHTS RESERVED</p></center>
+		<center><p>电话（传真）：010-62336651     地址：北京市海淀区清华东路35号     邮政编码:100083     Email:senlinren@bjfu.edu.cn    </p></center>
+	</div>
+</div>
+</body>
+
+</html>
