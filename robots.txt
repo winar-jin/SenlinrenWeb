@@ -1,6 +1,14 @@
 User-agent: * 
-Disallow: /plus/ad_js.php
+Disallow: /gM*Kevbe/
+Disallow: /images/
+Disallow: /include/
+Disallow: /plus/
+Disallow: /special/
+Disallow: /templets/
+Disallow: /uploads/
 Disallow: /plus/advancedsearch.php
+Disallow: /404.html
+Disallow: /index.php
 Disallow: /plus/car.php
 Disallow: /plus/carbuyaction.php
 Disallow: /plus/shops_buyaction.php
@@ -16,3 +24,4 @@ Disallow: /plus/stow.php
 Disallow: /plus/count.php
 Disallow: /include
 Disallow: /templets
+Allow: /plus/search.php

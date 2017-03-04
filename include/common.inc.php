@@ -13,7 +13,8 @@
 error_reporting(E_ALL || ~E_NOTICE);
 define('DEDEINC', str_replace("\\", '/', dirname(__FILE__) ) );
 define('DEDEROOT', str_replace("\\", '/', substr(DEDEINC,0,-8) ) );
-define('DEDEDATA', DEDEROOT.'/data');
+//define('DEDEDATA', DEDEROOT.'/data');
+define('DEDEDATA', DEDEROOT.'/../data');
 define('DEDEMEMBER', DEDEROOT.'/member');
 define('DEDETEMPLATE', DEDEROOT.'/templets');
 

@@ -4,18 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <title>森林人</title>
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <meta name="author" content="Jin">
+    <meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="renderer" content="webkit">
+	<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self'"> 禁止内联js的执行-->
+    <meta name="keywords" content="forestry man team">
+    <meta name="description" content="forestry man team">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="shortcut icon" href="/templets/senlinren/images/favicon.ico"/>
+    <link rel="bookmark" href="/templets/senlinren/images/favicon.ico"/>
 
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" href="/templets/senlinren/style/bootstrap.min.css">
+    <script src="/templets/senlinren/js/jquery.min.js"></script>
+    <script src="/templets/senlinren/js/bootstrap.min.js"></script>
+    <script src="/templets/senlinren/js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/main.css">
     <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/style.css">
-    <link rel="shortcut icon" href="/templets/senlinren/images/favicon.ico"/>
-	<link rel="bookmark" href="/templets/senlinren/images/favicon.ico"/>
+    <!--<![endif]-->
+    <!--[if (IE 9)|(IE 10)|(IE 11)]>
+    <link rel="stylesheet" href="/templets/senlinren/style/bootstrap.min.css">
+    <script src="/templets/senlinren/js/jquery.min.js"></script>
+    <script src="/templets/senlinren/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/main.css">
+    <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/style.css">
+    <![endif]-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/templets/senlinren/js/html5shiv.min.js"></script>
+    <script src="/templets/senlinren/js/respond.min.js"></script>
+    <![endif]-->
+
+	<!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/main_ie8.css">
+    <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/main_ie8_c.css">
+    <script src="/templets/senlinren/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="/templets/senlinren/js/main_ie8.js" type="text/javascript"></script>
+    <script src="/templets/senlinren/js/babyzone.js" type="text/javascript"></script>
+    <script>window.jQuery || document.write('<script src="/templets/senlinren/js/jquery-1.11.0.min.js"><\/script>')</script>
+	<![endif]-->
+
+	<!--[if IE 7]>
+    <link href="/templets/senlinren/style/bootstrap-ie7.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/main_ie7.css">
+    <script src="/templets/senlinren/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="/templets/senlinren/js/main_ie8.js" type="text/javascript"></script>
+    <script src="/templets/senlinren/js/slideshow.js" type="text/javascript"></script>
+    <script src="/templets/senlinren/js/babyzone.js" type="text/javascript"></script>
+    <script>window.jQuery || document.write('<script src="/templets/senlinren/js/jquery-1.11.0.min.js"><\/script>')</script>
+	<![endif]-->
+	<!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="/templets/senlinren/style/bootstrap-ie6.css">
+	<link rel="stylesheet" type="text/css" href="/templets/senlinren/style/ie.css">
+	<![endif]-->
     <style>
         a{color: #326331;}
         a:hover{color: #993333; text-decoration:none;}
@@ -172,8 +215,9 @@ function AdMove(id){
 </script>           
 
 
-    <script>
-    function menuFix(){
+    
+<script>
+   /* function menuFix(){
 		  	var sfEls=document.getElementById("menu").getElementsByTagName("li");
 		    for(var index=0;index<sfEls.length;index++){
 			    sfEls[index].onmouseover=function(){
@@ -183,15 +227,27 @@ function AdMove(id){
 					this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
 			    }
 		    }
-		}
-		window.onload = menuFix;
+		}*/
+		//window.onload = menuFix;
 
+    (function(){
+        var sfEls=document.getElementById("menu").getElementsByTagName("li");
+        for(var index=0;index<sfEls.length;index++){
+            sfEls[index].onmouseover=function(){
+                this.className+=(this.className.length > 0 ? " " : "") + "sfhover";
+            }
+            sfEls[index].onmouseout=function(){
+                this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
+            }
+        }
+    })();
 		$(function(){
 		    $("#myCarousel").carousel({
 		        interval:4000
 		    });
 		});
 </script>
+
 <div class="row">
     <div class="top-green-bar"></div>
 </div>
@@ -199,11 +255,18 @@ function AdMove(id){
     <div class="container">
         <div class="row">
             <div class="col-md-1 top-bar-logo">
+                <!--[if lte IE 8 ]><img class="ie8-title-image-0304" style="height: 70px" src="/templets/senlinren/images/logo.png"><![endif]-->
+                <!--[if (gte IE 9)|!(IE)]><!-->
                 <a href="index.html"><img src="/templets/senlinren/images/logo.png"></a>
+                <!--<![endif]-->
             </div>
             <div class="col-md-2 top-bar-title">
+                <!--[if lte IE 8 ]><img class="first-img" src="/templets/senlinren/images/name.png">
+                <img src="/templets/senlinren/images/subName.png"><![endif]-->
+                <!--[if (gte IE 9)|!(IE)]><!-->
                 <a href="index.html"><img class="first-img" src="/templets/senlinren/images/name.png">
                     <img src="/templets/senlinren/images/subName.png"></a>
+                <!--<![endif]-->
             </div>
             <div class="col-md-5 top-bar-word">
                 <div>森林人只培养IT领袖和行业精英</div>
@@ -226,36 +289,36 @@ function AdMove(id){
     <div class="container">
         <div class="row">
             <div class="col-md-12" id="menu">
-                <ul style="padding: 0;">
+                <ul style="padding: 0;" class="menu-ie7-j">
                     <li>
                         <a href="http://senlinren.bjfu.edu.cn/index.html">首页</a>
                     </li>
-                    <li>
+                    <li class="menu-li-ie7-j">
                         <a href="#">简介<b class="caret"></b></a>
                         <ul>
-                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_duce.html">➣ 团队简介</a></li>
-                                <li><a href="http://senlinren.bjfu.edu.cn/a/teacher.html">➣ 师资力量</a></li>
-                                <li><a href="http://senlinren.bjfu.edu.cn/a/culture.html">➣ 团队文化</a></li>
-                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_team.html">➣ 团队结构</a></li>
-                                <li><a href="http://senlinren.bjfu.edu.cn/a/intro_public.html">➣ 公众号</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/intro_duce.html">➣ 团队简介</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/teacher.html">➣ 师资力量</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/culture.html">➣ 团队文化</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/intro_team.html">➣ 团队结构</a></li>
+                                <li><a href="http://senlinren.bjfu.edu.cn/intro_public.html">➣ 公众号</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="http://senlinren.bjfu.edu.cn/a/scientific.html">科研
+                        <a href="http://senlinren.bjfu.edu.cn/scientific.html">科研</a>
                     </li>
                     <li>
-							<a href="http://senlinren.bjfu.edu.cn/a/cooperation.html">合作</a>
+							<a href="http://senlinren.bjfu.edu.cn/cooperation.html">合作</a>
                     </li>
-                    <li>
+                    <li class="menu-li-ie7-j">
                         <a href="#">招新<b class="caret"></b></a>
                         <ul>
-                            <li><a href="http://senlinren.bjfu.edu.cn/a/teamintro.html">➣ 团队简介</a></li>
-                            <li><a href="http://senlinren.bjfu.edu.cn/a/enroll.html">➣ 报名表</a></li>
-                            <li><a href="http://senlinren.bjfu.edu.cn/a/question.html">➣ 常见问题</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/teamintro.html">➣ 团队简介</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/enroll.html">➣ 报名表</a></li>
+                            <li><a href="http://senlinren.bjfu.edu.cn/question.html">➣ 常见问题</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="http://senlinren.bjfu.edu.cn/a/contact.html">联系</a>
+                        <a href="http://senlinren.bjfu.edu.cn/contact.html">联系</a>
                     </li>
                 </ul>
             </div>
@@ -263,32 +326,64 @@ function AdMove(id){
     </div>
 </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- 轮播 -->
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- 轮播（Carousel）指标 -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <!-- 轮播（Carousel）项目 -->
-                    <div class="carousel-inner">
-                        <div class="item slide1">
-                            <!-- <img src="img/slide-1.png" alt="First slide"> -->
-                        </div>
-                        <div class="item slide2">
-                            <!-- <img src="img/slide-2.png" alt="Second slide"> -->
-                        </div>
-                        <div class="item active slide3">
-                            <!-- <img src="img/slide-3.png" alt="Third slide"> -->
-                        </div>
+
+
+    <!--[if (IE 8)|(IE 7)]>
+<script>
+    function changeImgWidth() {
+        var bannerImg = document.getElementById('banner');
+        var bannerWidth = bannerImg.offsetWidth;
+        var bannerList = document.getElementById('banner_list').getElementsByTagName('img');
+        for(var i = 0;i<bannerList.length;i++){
+            bannerList[i].style.width = bannerWidth.toString() + 'px';
+        }
+   }
+    window.onresize = changeImgWidth;
+    </script>
+<div id="banner">
+    <div id="banner_bg"></div>
+    <a id="banner_info"></a>
+    <ul id="list"></ul>
+    <div id="banner_list">
+        <a target="_blank"><img src="/templets/senlinren/images/slide-1.png" title="" alt="森林人欢迎你" /></a>
+        <a target="_blank"><img src="/templets/senlinren/images/slide-2.png" title="" alt="森林人欢迎你" /></a>
+        <a target="_blank"><img src="/templets/senlinren/images/slide-3.png" title="" alt="森林人欢迎你" /></a>
+        <a target="_blank"><img src="/templets/senlinren/images/slide-4.png" title="" alt="森林人欢迎你" /></a>
+    </div>
+</div>
+<![endif]-->
+
+<!--[if (!IE)|(IE 9)|(IE 10)|(IE 11)]><!-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- 轮播 -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item slide1">
+                        <!-- <img src="img/slide-1.png" alt="First slide"> -->
+                    </div>
+                    <div class="item slide2">
+                        <!-- <img src="img/slide-2.png" alt="Second slide"> -->
+                    </div>
+                    <div class="item active slide3">
+                        <!-- <img src="img/slide-3.png" alt="Third slide"> -->
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!--<![endif]-->
+
+
+
 
         <!-- 公告 -->
         <div class="row">
@@ -301,6 +396,285 @@ function AdMove(id){
 
 
         <div class="row news">
+            <!--[if IE 7]>
+            <div class="comiis_wrapad" id="slideContainer">
+                <div id="frameHlicAe" class="frame cl">
+                    <div class="temp"></div>
+                    <div class="block">
+                        <div class="cl">
+                            <ul class="slideshow" id="slidesImgs">
+                                <li><a>
+                                    <img src="/templets/senlinren/images/small1.png"  alt="" /></a></li>
+                                <li><a>
+                                    <img src="/templets/senlinren/images/small2.png"  alt="" /></a></li>
+                                <li><a>
+                                    <img src="/templets/senlinren/images/small3.png"  alt="" /></a></li>
+                                <li><a>
+                                    <img src="/templets/senlinren/images/small4.png"  alt="" /></a></li>
+                                <li><a>
+                                    <img src="/templets/senlinren/images/small5.png"  alt="" /></a></li>
+                            </ul>
+                        </div>
+                        <div class="slidebar" id="slideBar">
+                            <ul>
+                                <li class="on">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+
+            </script>
+            <![endif]-->
+            <!--[if IE 8]>
+            <script>
+
+                window.onload = function (){
+                    var js_silder = $("div.js-silder"),
+                            silder_main = $("div.silder-main"),
+                            silder_main_imgs = silder_main.children,
+                            imgs_len = silder_main_imgs.length,
+                            imgs_width = silder_main_imgs[0].offsetWidth,
+                            js_silder_ctrl = js_silder.children[1];
+                    //生成小的点击按钮
+                    for(var i = 0;i < imgs_len;i ++){
+                        silder_main_imgs[i].index = i;
+
+                        //将除第一张之外的全部图片都移到右边
+                        if(i != 0){
+                            silder_main_imgs[i].style.left = imgs_width + "px";
+                        }
+
+                        var span = document.createElement("span");
+                        span.className = "silder-ctrl-con";
+                        if(i == 0){
+                            span.className = "silder-ctrl-con current";
+                        }
+                        span.innerHTML = i+1;
+
+                        //将生成的span插入到最后一个元素的前面
+                        js_silder_ctrl.insertBefore(span, js_silder_ctrl.children[js_silder_ctrl.children.length - 1]);
+                    }
+
+                    //获取所有的点击按钮
+                    var silder_ctrl_spans = js_silder_ctrl.children,
+                            iNow = 0;//控制图片播放
+                    for (var j = 0,len = silder_ctrl_spans.length; j < len; j++) {
+
+                        silder_ctrl_spans[j].onclick = function (){
+                            var classname = this.className,
+                                    thatNum = this.innerHTML - 1;
+                            if(classname == "silder-ctrl-prev"){//左边按钮，即上一张按钮
+                                //当前这张图片往右边边出去
+                                animate(silder_main_imgs[iNow], {"left": imgs_width});
+
+                                iNow--;
+                                if(iNow < 0){
+                                    iNow = imgs_len - 1;
+                                }
+                                /*上一张图片进来之前先将它移到最左边，这样就能保证无限循环，如果不这样设置，那么第一次到头后就不会有从左边出来的效果了。
+                                 */
+                                silder_main_imgs[iNow].style.left = -imgs_width + "px";
+                                //上一张图片进来
+                                animate(silder_main_imgs[iNow], {"left": 0});
+                            }else if(classname == "silder-ctrl-next"){//右边按钮，即下一张按钮
+                                play();
+                            }else{
+                                /*如果点击的这个数字按钮的数值大于当前图片的索引，那么图片应该从右边出来*/
+                                if(thatNum > iNow){
+                                    animate(silder_main_imgs[iNow], {"left": -imgs_width});
+                                    silder_main_imgs[thatNum].style.left = imgs_width + "px";
+                                    animate(silder_main_imgs[thatNum], {"left": 0});
+                                }else if(thatNum < iNow){
+                                    animate(silder_main_imgs[iNow], {"left": imgs_width});
+                                    silder_main_imgs[thatNum].style.left = -imgs_width + "px";
+                                    animate(silder_main_imgs[thatNum], {"left": 0});
+                                }
+                                /*必须要把iNow 设置为 thatNum，因为下一次轮播是从当前的这张图片开始的*/
+                                iNow = thatNum;
+                            }
+
+                            setCtrlBtnStyle(iNow+1);
+                        }
+
+                    }
+
+                    //设置当前点击按钮的样式，不包括左、右按钮
+                    function setCtrlBtnStyle(num){
+                        for(var k = 1,len = silder_ctrl_spans.length;k <= len - 2;k ++){
+                            silder_ctrl_spans[k].className = "silder-ctrl-con";
+                        }
+
+                        silder_ctrl_spans[num].className = "silder-ctrl-con current";
+                    }
+
+                    //自动播放
+                    var timer = null;
+                    timer = setInterval(function (){
+                        play();
+                        setCtrlBtnStyle(iNow+1);
+                    }, 2000);
+
+                    //当鼠标放在图片上的时候停止自动播放
+                    js_silder.onmouseover = function (){
+                        clearInterval(timer);
+                    }
+                    //当鼠标离开图片的时候自动播放
+                    js_silder.onmouseleave = function (){
+                        clearInterval(timer);
+                        timer = setInterval(function (){
+                            play();
+                            setCtrlBtnStyle(iNow+1);
+                        }, 2000);
+                    }
+
+                    function play(){
+                        //当前这张图片往左边出去
+                        animate(silder_main_imgs[iNow], {"left": -imgs_width});
+
+                        iNow++;
+                        if(iNow > imgs_len - 1){
+                            iNow = 0;
+                        }
+                        /*下一张图片进来之前先将它移到最右边，这样就能保证无限循环，如果不这样设置，那么第一次到尾后就不会有从右边出来的效果了。
+                         */
+                        silder_main_imgs[iNow].style.left = imgs_width + "px";
+                        //下一张图片进来
+                        animate(silder_main_imgs[iNow], {"left": 0});
+                    }
+                }
+
+
+                /*动画函数*/
+                function animate(ele,attrsJson,fn){
+                    clearInterval(ele.timer);
+
+                    ele.timer = setInterval(function (){
+                        var flag = true;
+                        for(var attr in attrsJson){
+                            var curStyle = parseInt(getStyle(ele,attr)),
+                                    step = (parseInt(attrsJson[attr]) - curStyle) / 10;
+
+                            step = step > 0 ? Math.ceil(step) : Math.floor(step);
+
+                            if(curStyle != attrsJson[attr]){
+                                flag = false;
+                            }
+
+                            if(attr == "zIndex"){
+                                ele.style.zIndex = attrsJson[attr];
+                            }else{
+                                ele.style[attr] = curStyle + step + "px";
+                            }
+
+                        }
+                        if(flag){
+                            clearInterval(ele.timer);
+                            if(fn){
+                                fn.call(window);
+                            }
+                        }
+                    }, 20);
+                }
+                /*获取元素*/
+                function $(selector){
+                    var classSelectSign = selector.indexOf("."),
+                            idSelectSign = selector.indexOf("#");
+
+                    //id选择器
+                    if(idSelectSign > -1){
+                        return document.getElementById(selector.substr(1));
+                    }
+
+                    //class选择器
+                    if(classSelectSign > -1){
+                        var classSelect = selector.substr(classSelectSign+1);
+
+                        //支持通过class获取元素的浏览器
+                        if(document.getElementsByClassName){
+                            var eles = document.getElementsByClassName(classSelect);
+                            if(eles.length == 1){
+                                return eles[0];
+                            }else{
+                                return eles;
+                            }
+                        }else{
+                            var baseEleName = classSelectSign > 0 ? selector.substr(0,classSelectSign) : "*",
+                                    eles = document.getElementsByTagName(baseEleName),
+                                    elesResult = [];
+
+                            for(var i = 0,len = eles.length; i < len; i ++){
+                                if(hasClass(eles[i],classSelect)){
+                                    elesResult.push(eles[i]);
+                                }
+                            }
+                            if(elesResult.length == 1){
+                                return elesResult[0];
+                            }else{
+                                return elesResult;
+                            }
+                        }
+                    }
+
+                    //标签选择器
+                    return document.getElementsByTagName(selector);
+                }
+
+                /*判断元素是否有某个class*/
+                function hasClass(ele,classnameparam){
+                    var classname = ele.className
+                    classArr = classname.split(" ");
+                    for(var i in classArr){
+                        if(classArr[i] == classnameparam){
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+
+                /*获取样式*/
+                function getStyle(ele,attr){
+                    if(ele.currentStyle){
+                        return ele.currentStyle[attr];
+                    }else{
+                        return ele.ownerDocument.defaultView.getComputedStyle(ele,null)[attr];
+                    }
+                }
+            </script>
+            <div class="js-silder">
+                <div class="silder-scroll">
+                    <div class="silder-main">
+                        <div class="silder-main-img" style="left: 8px;">
+                            <img src="/templets/senlinren/images/small5.png" alt="">
+                        </div>
+                        <div class="silder-main-img" style="left: -310px;">
+                            <img src="/templets/senlinren/images/small4.png" alt="">
+                        </div>
+                        <div class="silder-main-img" style="left: -310px;">
+                            <img src="/templets/senlinren/images/small3.png" alt="">
+                        </div>
+                        <div class="silder-main-img" style="left: -310px;">
+                            <img src="/templets/senlinren/images/small2.png" alt="">
+                        </div>
+                        <div class="silder-main-img" style="left: -302px;">
+                            <img src="/templets/senlinren/images/small1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="js-silder-ctrl">
+                    <span class="silder-ctrl-prev"></span>
+                    <span class="silder-ctrl-next"></span>
+                </div>
+            </div>
+
+            <![endif]-->
+
+            <!--[if (!IE)|(IE 9)|(IE 10)|(IE 11)]><!-->
             <div class="col-md-5">
                 <div class="htmleaf-container">
                     <div class="container">
@@ -356,32 +730,59 @@ function AdMove(id){
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-7">
-                <div style="margin-right: 10px;border-bottom:1px solid #ccc;margin-bottom:10px;margin-left: -70px;">
-                    <p style="	display:inline-block;	width:350px;margin: 0 auto;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2010/0922/11.html"><font color='#006600'>“机器学习入门”讲座成功举办以及录播回放</font></a></p>
-                    <p style="	display:inline-block;	margin: 0 auto;float:right;color:#326331;">2016-12-19 09:03:00</p>
+            <!--<![endif]-->
+            <!--[if IE 7]>
+            <div class="col-md-7 ie8-j-articlelink">
+                <div style="margin-right: 10px;border-bottom:1px solid #ccc;height: 30px;">
+                    <p style="	display:block;width:350px;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2010/0912/10.html">林业信息大讲堂-机器学习入门</a></p>
+                    <p style="	display:block;float:right;color:#326331; margin-top: -35px;">2016-12-12</p>
                 </div>
-<div style="margin-right: 10px;border-bottom:1px solid #ccc;margin-bottom:10px;margin-left: -70px;">
-                    <p style="	display:inline-block;	width:350px;margin: 0 auto;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2010/0912/10.html">林业信息大讲堂-机器学习入门</a></p>
-                    <p style="	display:inline-block;	margin: 0 auto;float:right;color:#326331;">2016-12-12 09:22:00</p>
+<div style="margin-right: 10px;border-bottom:1px solid #ccc;height: 30px;">
+                    <p style="	display:block;width:350px;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2010/0909/9.html">2016森林人团队招新暨官网启动宣讲会成功举行</a></p>
+                    <p style="	display:block;float:right;color:#326331; margin-top: -35px;">2016-12-06</p>
                 </div>
-<div style="margin-right: 10px;border-bottom:1px solid #ccc;margin-bottom:10px;margin-left: -70px;">
-                    <p style="	display:inline-block;	width:350px;margin: 0 auto;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2010/0909/9.html">2016森林人团队招新暨官网启动宣讲会成功举行</a></p>
-                    <p style="	display:inline-block;	margin: 0 auto;float:right;color:#326331;">2016-12-06 18:41:00</p>
+<div style="margin-right: 10px;border-bottom:1px solid #ccc;height: 30px;">
+                    <p style="	display:block;width:350px;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2016/1123/6.html">信息学院模拟求职赛助力学生迈出职场第一步</a></p>
+                    <p style="	display:block;float:right;color:#326331; margin-top: -35px;">2016-11-23</p>
                 </div>
-<div style="margin-right: 10px;border-bottom:1px solid #ccc;margin-bottom:10px;margin-left: -70px;">
-                    <p style="	display:inline-block;	width:350px;margin: 0 auto;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2016/1123/6.html">信息学院模拟求职赛助力学生迈出职场第一步</a></p>
-                    <p style="	display:inline-block;	margin: 0 auto;float:right;color:#326331;">2016-11-23 22:36:25</p>
+<div style="margin-right: 10px;border-bottom:1px solid #ccc;height: 30px;">
+                    <p style="	display:block;width:350px;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2016/1123/5.html">老骥伏枥传帮带 信息新人勇接棒</a></p>
+                    <p style="	display:block;float:right;color:#326331; margin-top: -35px;">2016-11-23</p>
                 </div>
-<div style="margin-right: 10px;border-bottom:1px solid #ccc;margin-bottom:10px;margin-left: -70px;">
-                    <p style="	display:inline-block;	width:350px;margin: 0 auto;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2016/1123/5.html">老骥伏枥传帮带 信息新人勇接棒</a></p>
-                    <p style="	display:inline-block;	margin: 0 auto;float:right;color:#326331;">2016-11-23 22:35:27</p>
+<div style="margin-right: 10px;border-bottom:1px solid #ccc;height: 30px;">
+                    <p style="	display:block;width:350px;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2016/1123/4.html">信息学子在中国大学生计算机设计大赛中获奖</a></p>
+                    <p style="	display:block;float:right;color:#326331; margin-top: -35px;">2016-11-23</p>
                 </div>
 
             </div>
+            <![endif]-->
+            <!--[if (!IE)|(IE 8)|(IE 9)|(IE 10)|(IE 11)]><!-->
+            <div class="col-md-7 ie8-j-articlelink">
+                <div style="margin-right: 10px;border-bottom:1px solid #ccc;margin-bottom:10px;margin-left: -70px;">
+                    <p style="	display:inline-block;	width:350px;margin: 0 auto;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2010/0912/10.html">林业信息大讲堂-机器学习入门</a></p>
+                    <p style="	display:inline-block;	margin: 0 auto;float:right;color:#326331;">2016-12-12</p>
+                </div>
+<div style="margin-right: 10px;border-bottom:1px solid #ccc;margin-bottom:10px;margin-left: -70px;">
+                    <p style="	display:inline-block;	width:350px;margin: 0 auto;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2010/0909/9.html">2016森林人团队招新暨官网启动宣讲会成功举行</a></p>
+                    <p style="	display:inline-block;	margin: 0 auto;float:right;color:#326331;">2016-12-06</p>
+                </div>
+<div style="margin-right: 10px;border-bottom:1px solid #ccc;margin-bottom:10px;margin-left: -70px;">
+                    <p style="	display:inline-block;	width:350px;margin: 0 auto;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2016/1123/6.html">信息学院模拟求职赛助力学生迈出职场第一步</a></p>
+                    <p style="	display:inline-block;	margin: 0 auto;float:right;color:#326331;">2016-11-23</p>
+                </div>
+<div style="margin-right: 10px;border-bottom:1px solid #ccc;margin-bottom:10px;margin-left: -70px;">
+                    <p style="	display:inline-block;	width:350px;margin: 0 auto;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2016/1123/5.html">老骥伏枥传帮带 信息新人勇接棒</a></p>
+                    <p style="	display:inline-block;	margin: 0 auto;float:right;color:#326331;">2016-11-23</p>
+                </div>
+<div style="margin-right: 10px;border-bottom:1px solid #ccc;margin-bottom:10px;margin-left: -70px;">
+                    <p style="	display:inline-block;	width:350px;margin: 0 auto;overflow: hidden;	text-overflow: ellipsis;	white-space: nowrap;">➣&nbsp;&nbsp;<a href="/tongzhigonggao/2016/1123/4.html">信息学子在中国大学生计算机设计大赛中获奖</a></p>
+                    <p style="	display:inline-block;	margin: 0 auto;float:right;color:#326331;">2016-11-23</p>
+                </div>
+
+            </div>
+            <!--<![endif]-->
             <p id="findMore">
-                <a href="http://senlinren.bjfu.edu.cn/a/tongzhigonggao/index.html" onmouseover="this.style.color='#9cd774'" onmouseout="this.style.color='#009245'"
+                <a href="http://senlinren.bjfu.edu.cn/tongzhigonggao/index.html" onmouseover="this.style.color='#9cd774'" onmouseout="this.style.color='#009245'"
                     style="color:#009245; margin-top:20px;">>>更多 | More</a>
             </p>
         </div>
@@ -409,7 +810,7 @@ function AdMove(id){
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="odd">
                                 <td>01</td>
                                 <td>好乐通一体化通信系统</td>
                                 <td>通信系统</td>
@@ -423,11 +824,11 @@ function AdMove(id){
                                 <td>北京如令科技有限公司</td>
                                 <td>进行中</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>03</td>
                                 <td>点点成长app</td>
                                 <td>应用软件</td>
-                                <td></td>
+                                <td>长春金鸟药业有限公司</td>
                                 <td>2015.12</td>
                             </tr>
                             <tr>
@@ -437,7 +838,7 @@ function AdMove(id){
                                 <td>人民解放军某部队</td>
                                 <td>进行中</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>05</td>
                                 <td>阿福公益app</td>
                                 <td>应用软件</td>
@@ -452,7 +853,7 @@ function AdMove(id){
                                 <td>国家级大学生科技创新项目</td>
                                 <td>2016.6</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>07</td>
                                 <td>智能空中感知平台</td>
                                 <td>动画模拟</td>
@@ -466,7 +867,7 @@ function AdMove(id){
                                 <td>教育部人文社科项目</td>
                                 <td>2015.12</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>09</td>
                                 <td>Zombies and hunters</td>
                                 <td>游戏软件</td>
@@ -480,7 +881,7 @@ function AdMove(id){
                                 <td>教育部人文社科项目</td>
                                 <td>2014.7</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>11</td>
                                 <td>《橘中戏2.0》App的设计与实践</td>
                                 <td>游戏软件</td>
@@ -494,7 +895,7 @@ function AdMove(id){
                                 <td>教育部人文社科项目</td>
                                 <td>2012.5</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>13</td>
                                 <td>“书游纪”国学益智类3D游戏软件</td>
                                 <td>仿真模拟</td>
@@ -508,7 +909,7 @@ function AdMove(id){
                                 <td>建国60周年大庆组委会</td>
                                 <td>2009.9</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>15</td>
                                 <td>IBM虚拟全球会议室</td>
                                 <td>仿真模拟</td>
@@ -522,7 +923,7 @@ function AdMove(id){
                                 <td>北京天云智汇科技有限公司</td>
                                 <td>进行中</td>
                             </tr>
-                             <tr>
+                             <tr class="odd">
                                 <td>17</td>
                                 <td>面向大数据量的矢量瓦片裁剪、索引及可视化算法开发</td>
                                 <td>算法库</td>
@@ -536,7 +937,7 @@ function AdMove(id){
                                 <td>中国森林生态系统研究网络</td>
                                 <td>2016</td>
                             </tr>
-                             <tr>
+                             <tr class="odd">
                                 <td>19</td>
                                 <td>北京市园林绿化局“十三五”信息化规划</td>
                                 <td>发展规划</td>
@@ -550,7 +951,7 @@ function AdMove(id){
                                 <td>2016年中国数据挖掘竞赛</td>
                                 <td>2016.4</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>21</td>
                                 <td>中国水土保持学会奖项申报、水平评价系统</td>
                                 <td>应用软件</td>
@@ -564,7 +965,7 @@ function AdMove(id){
                                 <td>中国水土保持学会</td>
                                 <td>2015.8</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>23</td>
                                 <td>黑龙江省服务外包综合管理平台</td>
                                 <td>应用软件</td>
@@ -578,7 +979,7 @@ function AdMove(id){
                                 <td>哈尔滨市某高校</td>
                                 <td>2013.10</td>
                             </tr>
-                             <tr>
+                             <tr class="odd">
                                 <td>25</td>
                                 <td>基于物联网的林业生态监测一体化平台</td>
                                 <td>应用软件</td>
@@ -592,7 +993,7 @@ function AdMove(id){
                                 <td>国家环境保护公益性行业科研专项项目</td>
                                 <td>2013.12</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>27</td>
                                 <td>剂量-反应评估软件开发</td>
                                 <td>应用软件</td>
@@ -634,7 +1035,7 @@ function AdMove(id){
 			</div>
 		</div>-->
 	</div>
-    <div class="bottomeBar" style="opacity: 0.6;"> 
+    <div class="bottomeBar" > 
 		<div class="container">
 			<div class="row">
 				<div class="col-md-1 oftenLinks">常用链接</div>
@@ -646,6 +1047,9 @@ function AdMove(id){
 						<li><a href="http://jwc.bjfu.edu.cn/" target="_blank">北京林业大学教务处</a></li>
 						<li><a href="http://ad.bjfu.edu.cn/" target="_blank">艺术设计学院</a></li>
 						<li><a href="http://cy.ncss.org.cn/" target="_blank">大创网</a></li>
+						<li><a href="http://graduate.bjfu.edu.cn/" target="_blank">北京林业大学研究生院</a></li>
+						<li><a href="http://www.ccf.org.cn/sites/ccf/" target="_blank">中国计算机学会</a></li>
+						<li><a href="http://www.design.cn/" target="_blank">设计中国</a></li>
 					</ul>
 				</div>
 				<div class="col-md-1 col-md-offset-1 logo">
@@ -659,30 +1063,49 @@ function AdMove(id){
 					<center><img src="/templets/senlinren/images/baoming.png"></center>
 					<p>扫码报名森林人</p>
 				</div>
-				<div class="col-md-3">
-					<div>
-						<img src="/templets/senlinren/images/social_01.png">
-						<img src="/templets/senlinren/images/social_02.png">
-						<img src="/templets/senlinren/images/social_03.png">
-						<img src="/templets/senlinren/images/social_04.png">
-					</div>
-					<div>
-						<img src="/templets/senlinren/images/social_05.png">
-						<img src="/templets/senlinren/images/social_06.png">
-						<img src="/templets/senlinren/images/social_07.png">
-						<img src="/templets/senlinren/images/social_08.png">
-					</div>
-				</div>
+				<!--<div class="col-md-3">-->
+					<!--<div>-->
+						<!--<img src="/templets/senlinren/images/social_01.png">-->
+						<!--<img src="/templets/senlinren/images/social_02.png">-->
+						<!--<img src="/templets/senlinren/images/social_03.png">-->
+						<!--<img src="/templets/senlinren/images/social_04.png">-->
+					<!--</div>-->
+					<!--<div>-->
+						<!--<img src="/templets/senlinren/images/social_05.png">-->
+						<!--<img src="/templets/senlinren/images/social_06.png">-->
+						<!--<img src="/templets/senlinren/images/social_07.png">-->
+						<!--<img src="/templets/senlinren/images/social_08.png">-->
+					<!--</div>-->
+				<!--</div>-->
 			</div>
 		</div>
 	</div>
 
     
 	<div class="bottomeGreen">
-		<center><p>版权所有 北京林业大学信息学院森林人团队   COPYRIGHT  2016  SENLINREN.BJFU.EDU.CN ALL RIGHTS RESERVED</p></center>
+		<center><p>版权所有 北京林业大学森林人团队   COPYRIGHT  2016  SENLINREN.BJFU.EDU.CN ALL RIGHTS RESERVED</p></center>
 		<center><p>电话（传真）：010-62336651     地址：北京市海淀区清华东路35号     邮政编码:100083     Email:senlinren@bjfu.edu.cn    </p></center>
+		<center><p><a href="http://webscan.360.cn/index/checkwebsite/url/senlinren.bjfu.edu.cn"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/73584294d951f815358cd80f8ff6065b"/></a></p></center>
 	</div>
 </div>
+	<!-- bsie js 补丁只在IE6中才执行 -->
+	<!--[if lte IE 6]>
+	<script type="text/javascript" src="/templets/senlinren/js/bootstrap-ie.js"></script>
+	<![endif]-->
+    <script>
+
+        (function(){
+            var sfEls=document.getElementById("menu").getElementsByTagName("li");
+            for(var index=0;index<sfEls.length;index++){
+                sfEls[index].onmouseover=function(){
+                    this.className+=(this.className.length > 0 ? " " : "") + "sfhover";
+                }
+                sfEls[index].onmouseout=function(){
+                    this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
+                }
+            }
+        })();
+    </script>
 </body>
 
 </html>

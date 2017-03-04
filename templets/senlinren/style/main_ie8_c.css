@@ -1,0 +1,63 @@
+#bottom-all{
+    margin: 0;
+    width: 100%;
+    background-size: cover;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://senlinren.bjfu.edu.cn/templets/senlinren/images/bottom-bgimg.png',  sizingMethod='scale');
+}
+.bottomeBar{
+    width:1300px;
+    margin:0 auto;
+}
+
+.oftenLinks{
+    FLOAT: left;
+    MARGIN-LEFT: 50px;
+    DISPLAY: inline-block;
+    margin-right: 20px;
+}
+.links{
+    FLOAT: left;
+    DISPLAY: inline-block;
+    border-left: #9F9F9F solid 2px;
+
+}
+.links ul{
+    width:360px;
+    margin:0 auto;
+}
+.links li{
+    LIST-STYLE-TYPE: none;
+    WIDTH: 180px;
+    float: left;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+.logo{
+    float:left;
+    margin-right:80px;
+}
+.logo img{
+    margin-left:60px;
+    margin-top: 20px;
+    width: 120px;
+    height:120px;
+}
+.qrcode{
+    DISPLAY: inline-block;
+}
+.qrcode p{
+    background-color:#01A46D;
+}
+.IE8-footer-share{
+    DISPLAY: inline-block;
+    margin-left:10px;
+}
+.bottomeGreen{
+    margin-top:100px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: green;
+}
+.bottomeGreen p{
+    color: white;
+}

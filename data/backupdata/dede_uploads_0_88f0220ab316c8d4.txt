@@ -1,9 +1,0 @@
-INSERT INTO `dede_uploads` VALUES('1','2','北林学子在ACM-ICPC/CCPC程序设计竞赛中再创佳绩勇','/uploads/allimg/161123/2226263464-0.jpg','1','500','375','0','81495','1479911194','1');
-INSERT INTO `dede_uploads` VALUES('2','2','北林学子在ACM-ICPC/CCPC程序设计竞赛中再创佳绩勇','/uploads/allimg/161123/2226263H3-1.jpg','1','500','375','0','77230','1479911203','1');
-INSERT INTO `dede_uploads` VALUES('3','2','北林学子在ACM-ICPC/CCPC程序设计竞赛中再创佳绩勇','/uploads/allimg/161123/2226262541-2.jpg','1','500','375','0','60426','1479911203','1');
-INSERT INTO `dede_uploads` VALUES('4','2','北林学子在ACM-ICPC/CCPC程序设计竞赛中再创佳绩勇','/uploads/allimg/161123/22262A492-3.jpg','1','500','375','0','69063','1479911203','1');
-INSERT INTO `dede_uploads` VALUES('5','3','信息学院学生支部书记座谈会加强思想引领','/uploads/allimg/161123/222HTb1-0.jpg','1','584','384','0','36896','1479911248','1');
-INSERT INTO `dede_uploads` VALUES('6','4','信息学子在中国大学生计算机设计大赛中获奖','/uploads/allimg/161123/2231433108-0.jpg','1','574','432','0','27784','1479911503','1');
-INSERT INTO `dede_uploads` VALUES('7','4','信息学子在中国大学生计算机设计大赛中获奖','/uploads/allimg/161123/2231436422-1.jpg','1','550','470','0','43909','1479911503','1');
-INSERT INTO `dede_uploads` VALUES('8','5','老骥伏枥传帮带 信息新人勇接棒','/uploads/allimg/161123/2236201U6-0.jpg','1','587','388','0','33993','1479911780','1');
-INSERT INTO `dede_uploads` VALUES('9','6','信息学院模拟求职赛助力学生迈出职场第一步','/uploads/allimg/161123/223F45D8-0.jpg','1','554','370','0','39774','1479911824','1');

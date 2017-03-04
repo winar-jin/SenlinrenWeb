@@ -153,7 +153,7 @@ nav a:hover{
 	font-weight: bold;
 }
 .bottomeBar{
-	background: #E8E8E8;
+	background: rgba(188,188,188,.3);
 	padding-top: 30px;
 }
 .bottomeBar .oftenLinks{
@@ -172,15 +172,15 @@ nav a:hover{
 }
 .bottomeBar .links li a{
 	line-height: 35px;
-	background: #E8E8E8;
+	background: transparent;
 }
 .bottomeBar .links li a:hover{
 	text-decoration: underline;
 	color: #000;
 }
 .bottomeBar .logo img{
-	height: 80px;
-	width: 80px;
+	height: 120px;
+	width: 120px;
 }
 .bottomeBar .qrcode{
 	padding: 5px;
@@ -191,7 +191,6 @@ nav a:hover{
 }
 .bottomeGreen{
 	background: #256A00;
-	height: 80px;
 	padding: 17px 0px;
 }
 .bottomeGreen p{
@@ -212,37 +211,37 @@ div#myCarousel {
 	background-image: url("../images/slide-1.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	height: 425px;
+	height: 540px;
 }
 #myCarousel .slide2{
 	background-image: url("../images/slide-2.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	height: 425px;
+	height: 540px;
 }
 #myCarousel .slide3{
 	background-image: url("../images/slide-3.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	height: 425px;
+	height: 540px;
 }
 #myCarousel .slide4{
 	background-image: url("../images/slide-4.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	height: 425px;
+	height: 540px;
 }
 #myCarousel .slide5{
 	background-image: url("../images/slide-5.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	height: 425px;
+	height: 540px;
 }
 #myCarousel .slide6{
 	background-image: url("../images/slide-6.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	height: 425px;
+	height: 540px;
 }
 #myCarousel ol li{
 	margin-left: 10px; 
@@ -386,6 +385,7 @@ hr{
 	float:left;
 	width:100%;
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .intro-content .public-content{
 	width:50%;

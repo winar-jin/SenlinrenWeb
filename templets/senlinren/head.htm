@@ -1,5 +1,6 @@
+
 <script>
-    function menuFix(){
+   /* function menuFix(){
 		  	var sfEls=document.getElementById("menu").getElementsByTagName("li");
 		    for(var index=0;index<sfEls.length;index++){
 			    sfEls[index].onmouseover=function(){
@@ -9,15 +10,27 @@
 					this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
 			    }
 		    }
-		}
-		window.onload = menuFix;
+		}*/
+		//window.onload = menuFix;
 
+    (function(){
+        var sfEls=document.getElementById("menu").getElementsByTagName("li");
+        for(var index=0;index<sfEls.length;index++){
+            sfEls[index].onmouseover=function(){
+                this.className+=(this.className.length > 0 ? " " : "") + "sfhover";
+            }
+            sfEls[index].onmouseout=function(){
+                this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
+            }
+        }
+    })();
 		$(function(){
 		    $("#myCarousel").carousel({
 		        interval:4000
 		    });
 		});
 </script>
+
 <div class="row">
     <div class="top-green-bar"></div>
 </div>
@@ -25,11 +38,18 @@
     <div class="container">
         <div class="row">
             <div class="col-md-1 top-bar-logo">
+                <!--[if lte IE 8 ]><img class="ie8-title-image-0304" style="height: 70px" src="{dede:global.cfg_templets_skin/}/images/logo.png"><![endif]-->
+                <!--[if (gte IE 9)|!(IE)]><!-->
                 <a href="index.html"><img src="{dede:global.cfg_templets_skin/}/images/logo.png"></a>
+                <!--<![endif]-->
             </div>
             <div class="col-md-2 top-bar-title">
+                <!--[if lte IE 8 ]><img class="first-img" src="{dede:global.cfg_templets_skin/}/images/name.png">
+                <img src="{dede:global.cfg_templets_skin/}/images/subName.png"><![endif]-->
+                <!--[if (gte IE 9)|!(IE)]><!-->
                 <a href="index.html"><img class="first-img" src="{dede:global.cfg_templets_skin/}/images/name.png">
                     <img src="{dede:global.cfg_templets_skin/}/images/subName.png"></a>
+                <!--<![endif]-->
             </div>
             <div class="col-md-5 top-bar-word">
                 <div>森林人只培养IT领袖和行业精英</div>
@@ -52,36 +72,36 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12" id="menu">
-                <ul style="padding: 0;">
+                <ul style="padding: 0;" class="menu-ie7-j">
                     <li>
                         <a href="{dede:global.cfg_basehost/}/index.html">首页</a>
                     </li>
-                    <li>
+                    <li class="menu-li-ie7-j">
                         <a href="#">简介<b class="caret"></b></a>
                         <ul>
-                                <li><a href="{dede:global.cfg_basehost/}/a/intro_duce.html">➣ 团队简介</a></li>
-                                <li><a href="{dede:global.cfg_basehost/}/a/teacher.html">➣ 师资力量</a></li>
-                                <li><a href="{dede:global.cfg_basehost/}/a/culture.html">➣ 团队文化</a></li>
-                                <li><a href="{dede:global.cfg_basehost/}/a/intro_team.html">➣ 团队结构</a></li>
-                                <li><a href="{dede:global.cfg_basehost/}/a/intro_public.html">➣ 公众号</a></li>
+                                <li><a href="{dede:global.cfg_basehost/}/intro_duce.html">➣ 团队简介</a></li>
+                                <li><a href="{dede:global.cfg_basehost/}/teacher.html">➣ 师资力量</a></li>
+                                <li><a href="{dede:global.cfg_basehost/}/culture.html">➣ 团队文化</a></li>
+                                <li><a href="{dede:global.cfg_basehost/}/intro_team.html">➣ 团队结构</a></li>
+                                <li><a href="{dede:global.cfg_basehost/}/intro_public.html">➣ 公众号</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="{dede:global.cfg_basehost/}/a/scientific.html">科研
+                        <a href="{dede:global.cfg_basehost/}/scientific.html">科研</a>
                     </li>
                     <li>
-							<a href="{dede:global.cfg_basehost/}/a/cooperation.html">合作</a>
+							<a href="{dede:global.cfg_basehost/}/cooperation.html">合作</a>
                     </li>
-                    <li>
+                    <li class="menu-li-ie7-j">
                         <a href="#">招新<b class="caret"></b></a>
                         <ul>
-                            <li><a href="{dede:global.cfg_basehost/}/a/teamintro.html">➣ 团队简介</a></li>
-                            <li><a href="{dede:global.cfg_basehost/}/a/enroll.html">➣ 报名表</a></li>
-                            <li><a href="{dede:global.cfg_basehost/}/a/question.html">➣ 常见问题</a></li>
+                            <li><a href="{dede:global.cfg_basehost/}/teamintro.html">➣ 团队简介</a></li>
+                            <li><a href="{dede:global.cfg_basehost/}/enroll.html">➣ 报名表</a></li>
+                            <li><a href="{dede:global.cfg_basehost/}/question.html">➣ 常见问题</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="{dede:global.cfg_basehost/}/a/contact.html">联系</a>
+                        <a href="{dede:global.cfg_basehost/}/contact.html">联系</a>
                     </li>
                 </ul>
             </div>
